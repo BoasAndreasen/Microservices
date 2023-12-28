@@ -1,0 +1,61 @@
+plugins {
+    id("com.github.johnrengelman.shadow") version "7.1.2"
+    id("io.micronaut.application") version "3.7.10"
+
+    id("jacoco")
+}
+
+version = "0.1"
+group = "uk.ac.york.eng2.hashtags"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor("io.micronaut.data:micronaut-data-processor")
+    annotationProcessor("io.micronaut:micronaut-http-validation")
+    annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+
+    implementation("io.micronaut:micronaut-http-client")
+    implementation("io.micronaut.data:micronaut-data-hibernate-jpa")
+    implementation("io.micronaut.kafka:micronaut-kafka")
+    implementation("io.micronaut.kafka:micronaut-kafka-streams")
+    implementation("io.micronaut.serde:micronaut-serde-jackson")
+    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
+    implementation("jakarta.annotation:jakarta.annotation-api")
+
+    testImplementation("org.awaitility:awaitility:4.2.0")
+    testImplementation("org.apache.kafka:kafka-streams-test-utils:2.8.2")
+
+    runtimeOnly("ch.qos.logback:logback-classic")
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+}
+
+
+application {
+    mainClass.set("uk.ac.york.eng2.hashtags.Application")
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("11")
+    targetCompatibility = JavaVersion.toVersion("11")
+}
+
+graalvmNative.toolchainDetection = false
+micronaut {
+    runtime("netty")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("uk.ac.york.eng2.hashtags.*")
+    }
+}
+
+test {
+    // report is always generated after tests run
+    finalizedBy jacocoTestReport
+}
+jacocoTestReport {
+    // tests are required to run before generating the report
+    dependsOn test
+}

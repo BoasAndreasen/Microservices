@@ -1,0 +1,49 @@
+plugins {
+    id("com.github.johnrengelman.shadow") version "7.1.2"
+    id("io.micronaut.application") version "3.7.10"
+}
+
+version = "0.1"
+group = "uk.ac.york.eng2.videos.cli"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor("info.picocli:picocli-codegen")
+    annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+    implementation("info.picocli:picocli")
+    implementation("io.micronaut.picocli:micronaut-picocli")
+    implementation("io.micronaut.serde:micronaut-serde-jackson")
+    implementation("jakarta.annotation:jakarta.annotation-api")
+    runtimeOnly("ch.qos.logback:logback-classic")
+    implementation("io.micronaut:micronaut-http-client")
+}
+
+
+application {
+    mainClass.set("uk.ac.york.eng2.videos.cli.VideoCliCommand")
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("11")
+    targetCompatibility = JavaVersion.toVersion("11")
+}
+
+micronaut {
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("uk.ac.york.eng2.videos.cli.*")
+    }
+}
+
+
+
+configurations.all {
+    resolutionStrategy.dependencySubstitution {
+        substitute(module("io.micronaut:micronaut-jackson-databind"))
+            .using(module("io.micronaut.serde:micronaut-serde-jackson:1.5.3"))
+    }
+}
+

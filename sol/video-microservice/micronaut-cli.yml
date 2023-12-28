@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: uk.ac.york.eng2.videos
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, data, data-jpa, gradle, http-client, java, java-application, jdbc-hikari, junit, kafka, kafka-streams, logback, mariadb, micronaut-build, netty-server, readme, serialization-jackson, shade, test-resources, yaml]
