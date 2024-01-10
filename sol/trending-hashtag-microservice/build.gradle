@@ -6,7 +6,7 @@ plugins {
 }
 
 version = "0.1"
-group = "uk.ac.york.eng2.hashtags"
+group = "uk.ac.york.eng2.trendingHashtags"
 
 repositories {
     mavenCentral()
@@ -24,6 +24,7 @@ dependencies {
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("io.micronaut.sql:micronaut-jdbc-hikari")
     implementation("jakarta.annotation:jakarta.annotation-api")
+    
 
     testImplementation("org.awaitility:awaitility:4.2.0")
     testImplementation("org.apache.kafka:kafka-streams-test-utils:2.8.2")
@@ -34,7 +35,7 @@ dependencies {
 
 
 application {
-    mainClass.set("uk.ac.york.eng2.hashtags.Application")
+    mainClass.set("uk.ac.york.eng2.trendingHashtags.Application")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("11")
@@ -47,7 +48,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("uk.ac.york.eng2.hashtags.*")
+        annotations("uk.ac.york.eng2.trendingHashtags.*")
     }
 }
 
@@ -58,4 +59,11 @@ test {
 jacocoTestReport {
     // tests are required to run before generating the report
     dependsOn test
+}
+
+// We need the C++ standard library for RocksDB (used by Kafka Streams),
+// and the glibc compatibility layer.
+tasks.named("dockerfile") {
+  baseImage = "eclipse-temurin:11-alpine"
+  instruction "RUN apk add --no-cache libstdc++ gcompat"
 }

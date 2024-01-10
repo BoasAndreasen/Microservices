@@ -7,8 +7,8 @@ import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Post;
 import io.micronaut.http.annotation.Put;
 import io.micronaut.http.client.annotation.Client;
-import uk.ac.york.eng2.hashtags.domain.Hashtag;
-import uk.ac.york.eng2.hashtags.dto.HashtagDTO;
+import uk.ac.york.eng2.trendingHashtags.domain.Hashtag;
+import uk.ac.york.eng2.trendingHashtags.dto.HashtagDTO;
 
 @Client("/trendingHashtags")
 public interface HashtagsClient {

@@ -2,7 +2,6 @@ services:
   # Our database management system
   db-video:
     image: mariadb:11
-    restart: unless-stopped
     environment:
       MARIADB_USER: &dbuser todo
       MARIADB_PASSWORD: &dbpass todosecret
@@ -40,7 +39,7 @@ services:
     image: trending-hashtag-microservice:latest
     restart: unless-stopped
     ports:
-      - "8081:8081"
+      - "8081:8080"
     environment:
       DB_HOST: db-trendingHashtags
       DB_USER: *dbuser
@@ -52,6 +51,20 @@ services:
       - kafka-0
       - kafka-1
       - kafka-2
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    ports:
+      - 9000:8080
+    depends_on:
+      - kafka-0
+      - kafka-1
+      - kafka-2
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka-0:9092
+      KAFKA_CLUSTERS_0_METRICS_PORT: 9997
+      DYNAMIC_CONFIG_ENABLED: 'true'
 
   kafka-0:
     image: docker.io/bitnami/kafka:3.5

@@ -4,7 +4,7 @@ plugins {
 }
 
 version = "0.1"
-group = "uk.ac.york.eng2.books.cli"
+group = "uk.ac.york.eng2.trendingHashtags.cli"
 
 repositories {
     mavenCentral()
@@ -23,7 +23,7 @@ dependencies {
 
 
 application {
-    mainClass.set("uk.ac.york.eng2.books.cli.BookCliCommand")
+    mainClass.set("uk.ac.york.eng2.trendingHashtags.cli.TrendingHashtagCliCommand")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("11")
@@ -34,7 +34,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("uk.ac.york.eng2.books.cli.*")
+        annotations("uk.ac.york.eng2.trendingHashtags.cli.*")
     }
 }
 

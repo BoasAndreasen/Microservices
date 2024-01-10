@@ -13,7 +13,7 @@ jpa:
   default:
     entity-scan:
       packages:
-        - uk.ac.york.eng2.hashtags.domain
+        - uk.ac.york.eng2.trendingHashtags.domain
     properties:
       hibernate:
         show_sql: ${DEBUG_SQL:false}
