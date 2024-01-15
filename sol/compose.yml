@@ -22,6 +22,28 @@ services:
       - mariadb_data_trendingHashtags:/var/lib/mysql
     ports:
       - 3307:3306
+  db-subscriptions:
+    image: mariadb:11
+    environment:
+      MARIADB_USER: &dbuser todo
+      MARIADB_PASSWORD: &dbpass todosecret
+      MARIADB_ROOT_PASSWORD: iamroot
+      MARIADB_DATABASE: &dbname subscriptions
+    volumes:
+      - mariadb_data_subscriptions:/var/lib/mysql
+    ports:
+      - 3308:3306
+  db-hashtagRecommendation:
+    image: mariadb:11
+    environment:
+      MARIADB_USER: &dbuser todo
+      MARIADB_PASSWORD: &dbpass todosecret
+      MARIADB_ROOT_PASSWORD: iamroot
+      MARIADB_DATABASE: &dbname hashtagRecommendation
+    volumes:
+      - mariadb_data_hashtagRecommendation:/var/lib/mysql
+    ports:
+      - 3309:3306
 
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
@@ -115,6 +137,8 @@ services:
 volumes:
   mariadb_data_videos:
   mariadb_data_trendingHashtags:
+  mariadb_data_subscriptions:
+  mariadb_data_hashtagRecommendation:
   kafka_0_data:
   kafka_1_data:
   kafka_2_data:

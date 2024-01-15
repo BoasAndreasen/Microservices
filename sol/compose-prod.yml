@@ -51,6 +51,59 @@ services:
       - kafka-0
       - kafka-1
       - kafka-2
+  db-subscriptions:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MARIADB_USER: &dbuser todo
+      MARIADB_PASSWORD: &dbpass todosecret
+      MARIADB_ROOT_PASSWORD: iamroot
+      MARIADB_DATABASE: &dbname subscriptions
+    volumes:
+      - mariadb_data_subscriptions:/var/lib/mysql
+  subscription-microservice:
+    image: subscription-microservice:latest
+    restart: unless-stopped
+    ports:
+      - "8082:8080"
+    environment:
+      DB_HOST: db-subscriptions
+      DB_USER: *dbuser
+      DB_PASSWORD: *dbpass
+      DB_NAME: *dbname
+      KAFKA_BOOTSTRAP_SERVERS: kafka-0:9092,kafka-1:9092,kafka-2:9092
+    depends_on:
+      - db-subscriptions
+      - kafka-0
+      - kafka-1
+      - kafka-2
+  db-hashtagRecommendation:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MARIADB_USER: &dbuser todo
+      MARIADB_PASSWORD: &dbpass todosecret
+      MARIADB_ROOT_PASSWORD: iamroot
+      MARIADB_DATABASE: &dbname hashtagRecommendation
+    volumes:
+      - mariadb_data_hashtagRecommendation:/var/lib/mysql
+  hashtagRecommendation-microservice:
+    image: hashtag-recommendation-microservice:latest
+    restart: unless-stopped
+    ports:
+      - "8083:8080"
+    environment:
+      DB_HOST: db-hashtagRecommendation
+      DB_USER: *dbuser
+      DB_PASSWORD: *dbpass
+      DB_NAME: *dbname
+      KAFKA_BOOTSTRAP_SERVERS: kafka-0:9092,kafka-1:9092,kafka-2:9092
+    depends_on:
+      - db-hashtagRecommendation
+      - kafka-0
+      - kafka-1
+      - kafka-2
+
 
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
@@ -144,6 +197,8 @@ services:
 volumes:
   mariadb_data_videos:
   mariadb_data_trendingHashtags:
+  mariadb_data_subscriptions:
+  mariadb_data_hashtagRecommendation:
   kafka_0_data:
   kafka_1_data:
   kafka_2_data:
