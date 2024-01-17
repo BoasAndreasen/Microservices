@@ -21,3 +21,5 @@ To get the top 10 next videos to watch use “get-top-ten-by-username ‘usernam
 The hashtag recommendation microservice has a listener that listens to the subscription microservice subscribe and unsubscribe events. To store this information anonymously, the data storage works like a HashMap with a HashMap inside it where the value in the second hashtag is the counter. To implement this in a relational database since it doesn’t support HashMaps, the data storage was implemented as three columns where the third was the counter and the others were the HashMap keys. 
 
 When a user creates two or more subscriptions in the subscription microservice after creating a user and hashtag using “add-subscription ‘hashtag1’ ‘username1’” and then “add-subscription ‘hashtag2’ ‘username1’”, the counter for hashtag2 in hashtag1 increases to 1 and the counter for hashtag1 in hashtag2 increases by 1. To get the count of the top 10 related hashtags, the command “get-ten-other-hashtags ‘hashtag1’” can be used.
+
+![structurizr-88950-Container-001](https://github.com/BoasAndreasen/Microservices/assets/43874717/64f5ba3f-c923-4e2b-b07d-f2c3d655847d)
