@@ -1,0 +1,95 @@
+rule Controller2Java 
+	transform c : Controller {
+
+	template : "controller2java.egl"
+
+	parameters : Map{
+		"m" = c.eContainer()
+	}
+
+	target : c.getJavaFileName()
+}
+
+rule Domain2Java 
+	transform d : Domain {
+
+	template : "domain2java.egl"
+
+	parameters : Map{
+		"m" = d.eContainer()
+	}
+
+	target : d.getJavaFileName()
+}
+
+rule Dto2Java 
+	transform dt : Dto {
+
+	template : "dto2java.egl"
+
+	parameters : Map{
+		"m" = dt.eContainer()
+	}
+
+	target : dt.getJavaFileName()
+}
+
+rule Repository2Java 
+	transform r : Repository {
+
+	template : "repository2java.egl"
+
+	parameters : Map{
+		"m" = r.eContainer()
+	}
+
+	target : r.getJavaFileName()
+}
+
+rule Producer2Java 
+	transform p : Publisher {
+
+	template : "producer2java.egl"
+
+	parameters : Map{
+		"m" = p.eContainer()
+	}
+
+	target : p.getJavaFileName()
+}
+
+rule Consumer2Java 
+	transform s : Subscriber {
+
+	template : "consumer2java.egl"
+
+	parameters : Map{
+		"m" = s.eContainer()
+	}
+
+	target : s.getJavaFileName()
+}
+
+operation Controller getJavaFileName() {
+	return  "controllers/" + self.className.ftuc() + ".java";
+}
+
+operation Domain getJavaFileName() {
+	return  "domain/" + self.className.ftuc() + ".java";
+}
+
+operation Dto getJavaFileName() {
+	return  "dto/" + self.className.ftuc() + ".java";
+}
+
+operation Repository getJavaFileName() {
+	return  "repositories/" + self.className.ftuc() + ".java";
+}
+
+operation Publisher getJavaFileName() {
+	return  "events/" + self.className.ftuc() + ".java";
+}
+
+operation Subscriber getJavaFileName() {
+	return  "events/" + self.className.ftuc() + ".java";
+}

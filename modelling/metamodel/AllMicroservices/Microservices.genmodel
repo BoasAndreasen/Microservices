@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/AllMicroservices/src" modelPluginID="AllMicroservices"
+    modelName="Microservices" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>Microservices.ecore</foreignModel>
+  <genPackages prefix="Microservices" disposableProviderFactory="true" ecorePackage="Microservices.ecore#/">
+    <genClasses ecoreClass="Microservices.ecore#//TopNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//TopNode/events"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//TopNode/eventStreams"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//TopNode/microservices"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Event/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Event/keyType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Event/keyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Event/valType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Event/valName"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//EventStream">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//EventStream/topic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//EventStream/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Microservices.ecore#//EventStream/EventType"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Microservice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Microservice/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Microservice/subscribers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Microservice/publishers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Microservice/controllers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Microservice/domains"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Microservice/dtos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Microservice/repositories"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//JavaClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//JavaClass/classPackage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//JavaClass/className"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Controller">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Controller/path"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Microservices.ecore#//Controller/injections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Controller/apis"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Domain">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Domain/variables"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Dto">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Dto/variables"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Publisher">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Microservices.ecore#//Publisher/injections"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Microservices.ecore#//Publisher/eventStreams"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Subscriber">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Subscriber/groupId"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Microservices.ecore#//Subscriber/injections"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Microservices.ecore#//Subscriber/eventStreams"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Repository">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Repository/crudRepository"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Repository/functions"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Variable/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Variable/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Function">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Function/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Function/outputType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Microservices.ecore#//Function/parameters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Function/body"/>
+    </genClasses>
+    <genClasses ecoreClass="Microservices.ecore#//Api">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Api/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Microservices.ecore#//Api/path"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

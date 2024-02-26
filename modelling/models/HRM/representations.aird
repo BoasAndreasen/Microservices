@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Microservices" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_8ISC4LRVEe6Oh-tQ4nrr5A" selectedViews="_YMulELRWEe6Oh-tQ4nrr5A" version="14.5.1.202106111100">
+    <semanticResources>MyHRM.microservices</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_YMulELRWEe6Oh-tQ4nrr5A">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_cMeYILRWEe6Oh-tQ4nrr5A" name="HRM Diagram" repPath="#_cLwmcLRWEe6Oh-tQ4nrr5A" changeId="838ae7bf-24d9-4a36-92d8-c1b839b59cc4">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']"/>
+        <target xmi:type="Microservice" href="MyHRM.microservices#//@microservices.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_NsJQULRYEe6Oh-tQ4nrr5A" name="HashtagsRepository Diagram" repPath="#_NsIpQLRYEe6Oh-tQ4nrr5A" changeId="7430e26d-ec47-404b-a0c4-edfee0b900c7">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']"/>
+        <target xmi:type="Repository" href="MyHRM.microservices#//@microservices.0/@repositories.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_cPKN0LRYEe6Oh-tQ4nrr5A" name="findByNameOrderByCounterDescFunction Diagram" repPath="#_cPJmwLRYEe6Oh-tQ4nrr5A" changeId="5ae1f228-0cb8-466e-985c-09d52e63514f">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']"/>
+        <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_jNjjUrRYEe6Oh-tQ4nrr5A" name="findByNameAndSubscribedHashtagFunction Diagram" repPath="#_jNjjULRYEe6Oh-tQ4nrr5A" changeId="9ec48d05-2048-471e-a612-e9267c5699f6">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']"/>
+        <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_xCwYkLRYEe6Oh-tQ4nrr5A" name="HashtagsController Diagram" repPath="#_xCt8ULRYEe6Oh-tQ4nrr5A" changeId="c1b8a93e-b4c5-4974-bd58-040c862911f6">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']"/>
+        <target xmi:type="Controller" href="MyHRM.microservices#//@microservices.0/@controllers.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_KIUHwbRZEe6Oh-tQ4nrr5A" name="HashtagDomain Diagram" repPath="#_KITgsLRZEe6Oh-tQ4nrr5A" changeId="ef85bc32-fd79-4fb4-ac7a-8da1841c3a85">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']"/>
+        <target xmi:type="Domain" href="MyHRM.microservices#//@microservices.0/@domains.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YRnkwLRZEe6Oh-tQ4nrr5A" name="HashtagDTO Diagram" repPath="#_YRm9sLRZEe6Oh-tQ4nrr5A" changeId="8ae8182a-db33-4261-8b69-c4959b255b4a">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']"/>
+        <target xmi:type="Dto" href="MyHRM.microservices#//@microservices.0/@dtos.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_lVN98LRZEe6Oh-tQ4nrr5A" name="SubscriptionsConsumer Diagram" repPath="#_lVNW4LRZEe6Oh-tQ4nrr5A" changeId="c55bd237-8dd0-44c8-962e-d19150cbace8">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']"/>
+        <target xmi:type="Subscriber" href="MyHRM.microservices#//@microservices.0/@subscribers.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_r-qXILRZEe6Oh-tQ4nrr5A" name="SubscriptionsProducer Diagram" repPath="#_r-pwELRZEe6Oh-tQ4nrr5A" changeId="58d10201-3069-49f5-828d-d0cf6945d224">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']"/>
+        <target xmi:type="Publisher" href="MyHRM.microservices#//@microservices.0/@publishers.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Rggn4rRaEe6Oh-tQ4nrr5A" name="userUnsubscribedEventStream Diagram" repPath="#_Rggn4LRaEe6Oh-tQ4nrr5A" changeId="21dc6f56-0219-4384-a0c9-df3b3975d6df">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']"/>
+        <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_XhnOsrRaEe6Oh-tQ4nrr5A" name="userSubscribedEventStream Diagram" repPath="#_XhnOsLRaEe6Oh-tQ4nrr5A" changeId="dd047c8a-95bc-4852-b119-746051b2d390">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']"/>
+        <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_qy3qsrRfEe6Oh-tQ4nrr5A" name="getTop10AlsoSubscribedHashtagFunction Diagram" repPath="#_qy3qsLRfEe6Oh-tQ4nrr5A" changeId="9f231f66-24b2-4910-b884-d9b6768d04fa">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']"/>
+        <target xmi:type="Api" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.1"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_cLwmcLRWEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_cNMw4LRWEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_cNMw4bRWEe6Oh-tQ4nrr5A" type="Sirius" element="_cLwmcLRWEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_kUK4ALRWEe6Oh-tQ4nrr5A" type="2001" element="_kTydgLRWEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_kUOiYLRWEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_kUOiYbRWEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kUWeMLRWEe6Oh-tQ4nrr5A" type="3003" element="_kT81kLRWEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_kUWeMbRWEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kUWeMrRWEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_kUK4AbRWEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kUK4ArRWEe6Oh-tQ4nrr5A" x="144" y="56" width="137" height="89"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_FNmzMLRXEe6Oh-tQ4nrr5A" type="2001" element="_FNgFgLRXEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_FNnaQLRXEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FNnaQbRXEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FNnaQrRXEe6Oh-tQ4nrr5A" type="3003" element="_FNgskLRXEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_FNnaQ7RXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FNnaRLRXEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_FNmzMbRXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FNmzMrRXEe6Oh-tQ4nrr5A" x="380" y="56" width="145" height="89"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V_SnsLRXEe6Oh-tQ4nrr5A" type="2001" element="_V_NvMLRXEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_V_TOwLRXEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V_TOwbRXEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_T10LRXEe6Oh-tQ4nrr5A" type="3003" element="_V_NvMbRXEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V_T10bRXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_T10rRXEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V_SnsbRXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_SnsrRXEe6Oh-tQ4nrr5A" x="144" y="272" width="137" height="89"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_aHHYsLRXEe6Oh-tQ4nrr5A" type="2001" element="_aHDHQLRXEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_aHHYs7RXEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_aHHYtLRXEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_aHH_wLRXEe6Oh-tQ4nrr5A" type="3003" element="_aHDHQbRXEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_aHH_wbRXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aHH_wrRXEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_aHHYsbRXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aHHYsrRXEe6Oh-tQ4nrr5A" x="376" y="272" width="149" height="89"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hTCM0LRXEe6Oh-tQ4nrr5A" type="2001" element="_hS9UULRXEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_hTCz4LRXEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hTCz4bRXEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hTCz4rRXEe6Oh-tQ4nrr5A" type="3003" element="_hS97YLRXEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hTCz47RXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hTCz5LRXEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hTCM0bRXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hTCM0rRXEe6Oh-tQ4nrr5A" x="144" y="160" width="137" height="89"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_8-pYQrRXEe6Oh-tQ4nrr5A" type="2001" element="_8-lt4LRXEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_8-p_ULRXEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8-p_UbRXEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_8-qmYLRXEe6Oh-tQ4nrr5A" type="3003" element="_8-lt4bRXEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_8-qmYbRXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8-qmYrRXEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_8-pYQ7RXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8-pYRLRXEe6Oh-tQ4nrr5A" x="378" y="160" width="149" height="89"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_cNMw4rRWEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_K0h_cLRXEe6Oh-tQ4nrr5A" type="4001" element="_K0T9ALRXEe6Oh-tQ4nrr5A" source="_kUK4ALRWEe6Oh-tQ4nrr5A" target="_FNmzMLRXEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_K0jNkLRXEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K0jNkbRXEe6Oh-tQ4nrr5A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_K0j0oLRXEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K0j0obRXEe6Oh-tQ4nrr5A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_K0kbsLRXEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K0kbsbRXEe6Oh-tQ4nrr5A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_K0h_cbRXEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_K0h_crRXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K0h_c7RXEe6Oh-tQ4nrr5A" points="[0, 0, -240, 0]$[230, 0, -10, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K0va0LRXEe6Oh-tQ4nrr5A" id="(0.4416058394160584,0.38764044943820225)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K0va0bRXEe6Oh-tQ4nrr5A" id="(0.44482758620689655,0.38764044943820225)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_7cbXkLRXEe6Oh-tQ4nrr5A" type="4001" element="_7cZiYrRXEe6Oh-tQ4nrr5A" source="_hTCM0LRXEe6Oh-tQ4nrr5A" target="_FNmzMLRXEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_7cb-oLRXEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7cb-obRXEe6Oh-tQ4nrr5A" x="-1" y="-12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7cb-orRXEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7cb-o7RXEe6Oh-tQ4nrr5A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7cb-pLRXEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7cb-pbRXEe6Oh-tQ4nrr5A" x="1" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7cbXkbRXEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7cbXkrRXEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7cbXk7RXEe6Oh-tQ4nrr5A" points="[77, -35, -163, 73]$[176, -80, -64, 28]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7cb-prRXEe6Oh-tQ4nrr5A" id="(0.4416058394160584,0.43258426966292135)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7cb-p7RXEe6Oh-tQ4nrr5A" id="(0.44482758620689655,0.38764044943820225)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_cNedsLRWEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_cNfEwLRWEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_kTydgLRWEe6Oh-tQ4nrr5A" name="HashtagsController" outgoingEdges="_K0T9ALRXEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Controller" href="MyHRM.microservices#//@microservices.0/@controllers.0"/>
+      <semanticElements xmi:type="Controller" href="MyHRM.microservices#//@microservices.0/@controllers.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_kT81kLRWEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='controllerNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='controllerNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_FNgFgLRXEe6Oh-tQ4nrr5A" name="HashtagsRepository" incomingEdges="_K0T9ALRXEe6Oh-tQ4nrr5A _7cZiYrRXEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Repository" href="MyHRM.microservices#//@microservices.0/@repositories.0"/>
+      <semanticElements xmi:type="Repository" href="MyHRM.microservices#//@microservices.0/@repositories.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_FNgskLRXEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_K0T9ALRXEe6Oh-tQ4nrr5A" name="Injects" sourceNode="_kTydgLRWEe6Oh-tQ4nrr5A" targetNode="_FNgFgLRXEe6Oh-tQ4nrr5A">
+      <target xmi:type="Controller" href="MyHRM.microservices#//@microservices.0/@controllers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_K0WZQLRXEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@edgeMappings[name='injectionEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_K0XAULRXEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@edgeMappings[name='injectionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V_NvMLRXEe6Oh-tQ4nrr5A" name="Hashtag" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Domain" href="MyHRM.microservices#//@microservices.0/@domains.0"/>
+      <semanticElements xmi:type="Domain" href="MyHRM.microservices#//@microservices.0/@domains.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_V_NvMbRXEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='domainNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='domainNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_aHDHQLRXEe6Oh-tQ4nrr5A" name="HashtagDTO" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Dto" href="MyHRM.microservices#//@microservices.0/@dtos.0"/>
+      <semanticElements xmi:type="Dto" href="MyHRM.microservices#//@microservices.0/@dtos.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_aHDHQbRXEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='dtoNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='dtoNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hS9UULRXEe6Oh-tQ4nrr5A" name="SubscriptionsConsumer" outgoingEdges="_7cZiYrRXEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Subscriber" href="MyHRM.microservices#//@microservices.0/@subscribers.0"/>
+      <semanticElements xmi:type="Subscriber" href="MyHRM.microservices#//@microservices.0/@subscribers.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_hS97YLRXEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='subscriberNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='subscriberNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7cZiYrRXEe6Oh-tQ4nrr5A" name="Injects" sourceNode="_hS9UULRXEe6Oh-tQ4nrr5A" targetNode="_FNgFgLRXEe6Oh-tQ4nrr5A">
+      <target xmi:type="Subscriber" href="MyHRM.microservices#//@microservices.0/@subscribers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7cZiY7RXEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@edgeMappings[name='injectionEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7cZiZLRXEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@edgeMappings[name='injectionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_8-lt4LRXEe6Oh-tQ4nrr5A" name="SubscriptionsProducer" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Publisher" href="MyHRM.microservices#//@microservices.0/@publishers.0"/>
+      <semanticElements xmi:type="Publisher" href="MyHRM.microservices#//@microservices.0/@publishers.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_8-lt4bRXEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='publisherNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='publisherNode']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_cMEIcLRWEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer"/>
+    <target xmi:type="Microservice" href="MyHRM.microservices#//@microservices.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_NsIpQLRYEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_NsJ3YLRYEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_NsJ3YbRYEe6Oh-tQ4nrr5A" type="Sirius" element="_NsIpQLRYEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_NsMTobRYEe6Oh-tQ4nrr5A" type="2001" element="_NsLskLRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_NsMTpLRYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_NsMTpbRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_NsM6sLRYEe6Oh-tQ4nrr5A" type="3003" element="_NsLskbRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_NsM6sbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NsM6srRYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_NsMTorRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NsMTo7RYEe6Oh-tQ4nrr5A" x="264" y="48" width="153" height="97"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_QC33ILRYEe6Oh-tQ4nrr5A" type="2001" element="_QCxJcLRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_QC33I7RYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_QC33JLRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QC4eMLRYEe6Oh-tQ4nrr5A" type="3003" element="_QCxwgLRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_QC4eMbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QC4eMrRYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_QC33IbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QC33IrRYEe6Oh-tQ4nrr5A" x="188" y="204" width="121" height="85"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V95EELRYEe6Oh-tQ4nrr5A" type="2001" element="_V9y9cLRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_V95EE7RYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V95EFLRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V95rILRYEe6Oh-tQ4nrr5A" type="3003" element="_V9y9cbRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V95rIbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V95rIrRYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V95EEbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V95EErRYEe6Oh-tQ4nrr5A" x="396" y="204" width="113" height="85"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_NsJ3YrRYEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_QC5FQLRYEe6Oh-tQ4nrr5A" type="4001" element="_QC0MwrRYEe6Oh-tQ4nrr5A" source="_NsMTobRYEe6Oh-tQ4nrr5A" target="_QC33ILRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_QC5FRLRYEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QC5FRbRYEe6Oh-tQ4nrr5A" x="-2" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QC5FRrRYEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QC5FR7RYEe6Oh-tQ4nrr5A" x="3" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QC5FSLRYEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QC5FSbRYEe6Oh-tQ4nrr5A" x="2" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_QC5FQbRYEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_QC5FQrRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QC5FQ7RYEe6Oh-tQ4nrr5A" points="[-52, 49, 77, -74]$[-114, 108, 15, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QC5FSrRYEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QC5FS7RYEe6Oh-tQ4nrr5A" id="(0.19008264462809918,0.17647058823529413)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_V95rI7RYEe6Oh-tQ4nrr5A" type="4001" element="_V92AwLRYEe6Oh-tQ4nrr5A" source="_NsMTobRYEe6Oh-tQ4nrr5A" target="_V95EELRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_V95rJ7RYEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V95rKLRYEe6Oh-tQ4nrr5A" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V95rKbRYEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V95rKrRYEe6Oh-tQ4nrr5A" x="-2" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V95rK7RYEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V95rLLRYEe6Oh-tQ4nrr5A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_V95rJLRYEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_V95rJbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V95rJrRYEe6Oh-tQ4nrr5A" points="[28, 49, -43, -74]$[62, 108, -9, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V96SMLRYEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V96SMbRYEe6Oh-tQ4nrr5A" id="(0.13274336283185842,0.17647058823529413)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_NsLsk7RYEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_NsMToLRYEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_NsLskLRYEe6Oh-tQ4nrr5A" name="HashtagsRepository" outgoingEdges="_QC0MwrRYEe6Oh-tQ4nrr5A _V92AwLRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Repository" href="MyHRM.microservices#//@microservices.0/@repositories.0"/>
+      <semanticElements xmi:type="Repository" href="MyHRM.microservices#//@microservices.0/@repositories.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_NsLskbRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_QCxJcLRYEe6Oh-tQ4nrr5A" name="findByNameOrderByCounterDesc" incomingEdges="_QC0MwrRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.0"/>
+      <semanticElements xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_QCxwgLRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='functionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='functionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V9y9cLRYEe6Oh-tQ4nrr5A" name="findByNameAndSubscribedHashtag" incomingEdges="_V92AwLRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1"/>
+      <semanticElements xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_V9y9cbRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='functionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='functionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_QC0MwrRYEe6Oh-tQ4nrr5A" name="impl" sourceNode="_NsLskLRYEe6Oh-tQ4nrr5A" targetNode="_QCxJcLRYEe6Oh-tQ4nrr5A">
+      <target xmi:type="Repository" href="MyHRM.microservices#//@microservices.0/@repositories.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_QC0Mw7RYEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@edgeMappings[name='hasEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_QC0MxLRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@edgeMappings[name='hasEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V92AwLRYEe6Oh-tQ4nrr5A" name="impl" sourceNode="_NsLskLRYEe6Oh-tQ4nrr5A" targetNode="_V9y9cLRYEe6Oh-tQ4nrr5A">
+      <target xmi:type="Repository" href="MyHRM.microservices#//@microservices.0/@repositories.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V92AwbRYEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@edgeMappings[name='hasEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V92AwrRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@edgeMappings[name='hasEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_NsIpQbRYEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer"/>
+    <target xmi:type="Repository" href="MyHRM.microservices#//@microservices.0/@repositories.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_cPJmwLRYEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_cPK04LRYEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_cPK04bRYEe6Oh-tQ4nrr5A" type="Sirius" element="_cPJmwLRYEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_cPMDALRYEe6Oh-tQ4nrr5A" type="2001" element="_cPK047RYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_cPMqELRYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cPMqEbRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cPMqErRYEe6Oh-tQ4nrr5A" type="3003" element="_cPLb8LRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cPMqE7RYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cPMqFLRYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cPMDAbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cPMDArRYEe6Oh-tQ4nrr5A" x="224" y="36" width="209" height="105"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_em-ZwLRYEe6Oh-tQ4nrr5A" type="2001" element="_em4TILRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_em-Zw7RYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_em-ZxLRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_em_A0LRYEe6Oh-tQ4nrr5A" type="3003" element="_em46MLRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_em_A0bRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_em_A0rRYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_em-ZwbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_em-ZwrRYEe6Oh-tQ4nrr5A" x="284" y="216" width="73" height="57"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_cPK04rRYEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_enAO8LRYEe6Oh-tQ4nrr5A" type="4001" element="_em9ysrRYEe6Oh-tQ4nrr5A" source="_cPMDALRYEe6Oh-tQ4nrr5A" target="_em-ZwLRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_enA2ALRYEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_enA2AbRYEe6Oh-tQ4nrr5A" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_enBdELRYEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_enBdEbRYEe6Oh-tQ4nrr5A" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_enBdErRYEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_enBdE7RYEe6Oh-tQ4nrr5A" x="-1" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_enAO8bRYEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_enAO8rRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_enAO87RYEe6Oh-tQ4nrr5A" points="[-11, 53, 18, -90]$[-26, 128, 3, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_enCrMLRYEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_enCrMbRYEe6Oh-tQ4nrr5A" id="(0.2054794520547945,0.2631578947368421)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_cPLb8rRYEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_cPLb87RYEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cPK047RYEe6Oh-tQ4nrr5A" name="findByNameOrderByCounterDesc" outgoingEdges="_em9ysrRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.0"/>
+      <semanticElements xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_cPLb8LRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='functionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='functionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_em4TILRYEe6Oh-tQ4nrr5A" name="name" incomingEdges="_em9ysrRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.0/@parameters.0"/>
+      <semanticElements xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.0/@parameters.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_em46MLRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='variableNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='variableNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_em9ysrRYEe6Oh-tQ4nrr5A" name="param" sourceNode="_cPK047RYEe6Oh-tQ4nrr5A" targetNode="_em4TILRYEe6Oh-tQ4nrr5A">
+      <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_em9ys7RYEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@edgeMappings[name='hasVarEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_em9ytLRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@edgeMappings[name='hasVarEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_cPJmwbRYEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer"/>
+    <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_jNjjULRYEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_jNkKYLRYEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_jNkKYbRYEe6Oh-tQ4nrr5A" type="Sirius" element="_jNjjULRYEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_jNkxc7RYEe6Oh-tQ4nrr5A" type="2001" element="_jNkKY7RYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_jNlYgLRYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_jNlYgbRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_jNlYgrRYEe6Oh-tQ4nrr5A" type="3003" element="_jNkKZLRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_jNlYg7RYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jNlYhLRYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_jNkxdLRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jNkxdbRYEe6Oh-tQ4nrr5A" x="300" y="48" width="225" height="97"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mBqpsLRYEe6Oh-tQ4nrr5A" type="2001" element="_mBkjELRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_mBqps7RYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mBqptLRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mBqptbRYEe6Oh-tQ4nrr5A" type="3003" element="_mBlKILRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mBqptrRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBqpt7RYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mBqpsbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBqpsrRYEe6Oh-tQ4nrr5A" x="256" y="220" width="117" height="77"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mWC-RrRYEe6Oh-tQ4nrr5A" type="2001" element="_mV83oLRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_mWDlULRYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mWDlUbRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mWDlUrRYEe6Oh-tQ4nrr5A" type="3003" element="_mV83obRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_mWDlU7RYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mWDlVLRYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mWC-R7RYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mWC-SLRYEe6Oh-tQ4nrr5A" x="448" y="214" width="149" height="83"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_jNkKYrRYEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_mBrQwLRYEe6Oh-tQ4nrr5A" type="4001" element="_mBnmZLRYEe6Oh-tQ4nrr5A" source="_jNkxc7RYEe6Oh-tQ4nrr5A" target="_mBqpsLRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_mBrQxLRYEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBrQxbRYEe6Oh-tQ4nrr5A" x="-1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mBrQxrRYEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBrQx7RYEe6Oh-tQ4nrr5A" x="1" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mBrQyLRYEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBrQybRYEe6Oh-tQ4nrr5A" x="2" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mBrQwbRYEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mBrQwrRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBrQw7RYEe6Oh-tQ4nrr5A" points="[-50, 49, 91, -90]$[-126, 124, 15, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBrQyrRYEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBrQy7RYEe6Oh-tQ4nrr5A" id="(0.1282051282051282,0.19480519480519481)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mWDlVbRYEe6Oh-tQ4nrr5A" type="4001" element="_mWAiCLRYEe6Oh-tQ4nrr5A" source="_jNkxc7RYEe6Oh-tQ4nrr5A" target="_mWC-RrRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_mWEMYLRYEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mWEMYbRYEe6Oh-tQ4nrr5A" x="-1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mWEMYrRYEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mWEMY7RYEe6Oh-tQ4nrr5A" x="1" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mWEMZLRYEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mWEMZbRYEe6Oh-tQ4nrr5A" x="1" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mWDlVrRYEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mWDlV7RYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mWDlWLRYEe6Oh-tQ4nrr5A" points="[18, 49, -33, -84]$[45, 118, -6, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mWEMZrRYEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mWEMZ7RYEe6Oh-tQ4nrr5A" id="(0.10067114093959731,0.18072289156626506)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_jNkxcbRYEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_jNkxcrRYEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_jNkKY7RYEe6Oh-tQ4nrr5A" name="findByNameAndSubscribedHashtag" outgoingEdges="_mBnmZLRYEe6Oh-tQ4nrr5A _mWAiCLRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1"/>
+      <semanticElements xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_jNkKZLRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='functionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='functionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_mBkjELRYEe6Oh-tQ4nrr5A" name="name" incomingEdges="_mBnmZLRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1/@parameters.0"/>
+      <semanticElements xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1/@parameters.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_mBlKILRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='variableNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='variableNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_mV83oLRYEe6Oh-tQ4nrr5A" name="subscribedHashtag" incomingEdges="_mWAiCLRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1/@parameters.1"/>
+      <semanticElements xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1/@parameters.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_mV83obRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='variableNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='variableNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mBnmZLRYEe6Oh-tQ4nrr5A" name="param" sourceNode="_jNkKY7RYEe6Oh-tQ4nrr5A" targetNode="_mBkjELRYEe6Oh-tQ4nrr5A">
+      <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mBoNcLRYEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@edgeMappings[name='hasVarEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mBoNcbRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@edgeMappings[name='hasVarEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mWAiCLRYEe6Oh-tQ4nrr5A" name="param" sourceNode="_jNkKY7RYEe6Oh-tQ4nrr5A" targetNode="_mV83oLRYEe6Oh-tQ4nrr5A">
+      <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mWAiCbRYEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@edgeMappings[name='hasVarEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mWAiCrRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@edgeMappings[name='hasVarEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_jNjjUbRYEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer"/>
+    <target xmi:type="Function" href="MyHRM.microservices#//@microservices.0/@repositories.0/@functions.1"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_xCt8ULRYEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_xCyNwLRYEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_xCyNwbRYEe6Oh-tQ4nrr5A" type="Sirius" element="_xCt8ULRYEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_xC14ILRYEe6Oh-tQ4nrr5A" type="2001" element="_xC0C8LRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_xC2fMLRYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_xC2fMbRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xC3GQLRYEe6Oh-tQ4nrr5A" type="3003" element="_xC0C8bRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_xC3GQbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xC3GQrRYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_xC14IbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xC14IrRYEe6Oh-tQ4nrr5A" x="308" y="56" width="181" height="97"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0MGvILRYEe6Oh-tQ4nrr5A" type="2001" element="_0MB2oLRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_0MH9QLRYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_0MH9QbRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0MH9QrRYEe6Oh-tQ4nrr5A" type="3003" element="_0MCdsLRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_0MH9Q7RYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0MH9RLRYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_0MGvIbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0MGvIrRYEe6Oh-tQ4nrr5A" x="268" y="216" width="105" height="65"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7Qc7oLRYEe6Oh-tQ4nrr5A" type="2001" element="_7QYqMLRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_7Qc7o7RYEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_7Qc7pLRYEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7QdisLRYEe6Oh-tQ4nrr5A" type="3003" element="_7QZRQLRYEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_7QdisbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7QdisrRYEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_7Qc7obRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Qc7orRYEe6Oh-tQ4nrr5A" x="452" y="216" width="149" height="65"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_xCyNwrRYEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_0MIkULRYEe6Oh-tQ4nrr5A" type="4001" element="_0MDr1LRYEe6Oh-tQ4nrr5A" source="_xC14ILRYEe6Oh-tQ4nrr5A" target="_0MGvILRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_0MIkVLRYEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0MIkVbRYEe6Oh-tQ4nrr5A" x="-2" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0MIkVrRYEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0MIkV7RYEe6Oh-tQ4nrr5A" x="3" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0MIkWLRYEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0MIkWbRYEe6Oh-tQ4nrr5A" x="1" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_0MIkUbRYEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_0MIkUrRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0MIkU7RYEe6Oh-tQ4nrr5A" points="[-45, 49, 70, -78]$[-102, 112, 13, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0MJLYLRYEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0MJLYbRYEe6Oh-tQ4nrr5A" id="(0.14285714285714285,0.23076923076923078)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_7Qdis7RYEe6Oh-tQ4nrr5A" type="4001" element="_7QbGcLRYEe6Oh-tQ4nrr5A" source="_xC14ILRYEe6Oh-tQ4nrr5A" target="_7Qc7oLRYEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_7QeJwLRYEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7QeJwbRYEe6Oh-tQ4nrr5A" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7QeJwrRYEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7QeJw7RYEe6Oh-tQ4nrr5A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7QeJxLRYEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7QeJxbRYEe6Oh-tQ4nrr5A" x="-2" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7QditLRYEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7QditbRYEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7QditrRYEe6Oh-tQ4nrr5A" points="[29, 49, -47, -78]$[67, 112, -9, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7QeJxrRYEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7QeJx7RYEe6Oh-tQ4nrr5A" id="(0.1476510067114094,0.23076923076923078)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_xC1RELRYEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_xC1REbRYEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_xC0C8LRYEe6Oh-tQ4nrr5A" name="HashtagsController" outgoingEdges="_0MDr1LRYEe6Oh-tQ4nrr5A _7QbGcLRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Controller" href="MyHRM.microservices#//@microservices.0/@controllers.0"/>
+      <semanticElements xmi:type="Controller" href="MyHRM.microservices#//@microservices.0/@controllers.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_xC0C8bRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='controllerNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='controllerNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0MB2oLRYEe6Oh-tQ4nrr5A" name="list" incomingEdges="_0MDr1LRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Api" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.0"/>
+      <semanticElements xmi:type="Api" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_0MCdsLRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='apiNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='apiNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_7QYqMLRYEe6Oh-tQ4nrr5A" name="getTop10AlsoSubscribedHashtag" incomingEdges="_7QbGcLRYEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Api" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.1"/>
+      <semanticElements xmi:type="Api" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_7QZRQLRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='apiNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='apiNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_0MDr1LRYEe6Oh-tQ4nrr5A" name="Implements" sourceNode="_xC0C8LRYEe6Oh-tQ4nrr5A" targetNode="_0MB2oLRYEe6Oh-tQ4nrr5A">
+      <target xmi:type="Controller" href="MyHRM.microservices#//@microservices.0/@controllers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_0MES4LRYEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@edgeMappings[name='implementsEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_0MES4bRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@edgeMappings[name='implementsEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7QbGcLRYEe6Oh-tQ4nrr5A" name="Implements" sourceNode="_xC0C8LRYEe6Oh-tQ4nrr5A" targetNode="_7QYqMLRYEe6Oh-tQ4nrr5A">
+      <target xmi:type="Controller" href="MyHRM.microservices#//@microservices.0/@controllers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7QbGcbRYEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@edgeMappings[name='implementsEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7QbGcrRYEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@edgeMappings[name='implementsEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_xCujYLRYEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer"/>
+    <target xmi:type="Controller" href="MyHRM.microservices#//@microservices.0/@controllers.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_KITgsLRZEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_KIUu0LRZEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_KIUu0bRZEe6Oh-tQ4nrr5A" type="Sirius" element="_KITgsLRZEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_KIVV47RZEe6Oh-tQ4nrr5A" type="2001" element="_KIUu07RZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_KIVV5rRZEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_KIVV57RZEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KIV88LRZEe6Oh-tQ4nrr5A" type="3003" element="_KIUu1LRZEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_KIV88bRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KIV88rRZEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_KIVV5LRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KIVV5bRZEe6Oh-tQ4nrr5A" x="288" y="44" width="129" height="85"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L15D4LRZEe6Oh-tQ4nrr5A" type="2001" element="_L10ycLRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_L15D47RZEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L15D5LRZEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L15D5bRZEe6Oh-tQ4nrr5A" type="3003" element="_L11ZgLRZEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L15D5rRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L15D57RZEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L15D4bRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L15D4rRZEe6Oh-tQ4nrr5A" x="168" y="196" width="101" height="73"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_OGt3CLRZEe6Oh-tQ4nrr5A" type="2001" element="_OGqMoLRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_OGueELRZEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_OGueEbRZEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_OGueErRZEe6Oh-tQ4nrr5A" type="3003" element="_OGqMobRZEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_OGueE7RZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OGueFLRZEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_OGt3CbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OGt3CrRZEe6Oh-tQ4nrr5A" x="308" y="196" width="117" height="73"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_QetCELRZEe6Oh-tQ4nrr5A" type="2001" element="_QepXsLRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_QetCE7RZEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_QetCFLRZEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QetpILRZEe6Oh-tQ4nrr5A" type="3003" element="_QepXsbRZEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_QetpIbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QetpIrRZEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_QetCEbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QetCErRZEe6Oh-tQ4nrr5A" x="456" y="196" width="89" height="73"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_KIUu0rRZEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_L15D6LRZEe6Oh-tQ4nrr5A" type="4001" element="_L12npLRZEe6Oh-tQ4nrr5A" source="_KIVV47RZEe6Oh-tQ4nrr5A" target="_L15D4LRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_L15q8LRZEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L15q8bRZEe6Oh-tQ4nrr5A" x="-5" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L15q8rRZEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L15q87RZEe6Oh-tQ4nrr5A" x="3" y="12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L15q9LRZEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L15q9bRZEe6Oh-tQ4nrr5A" x="4" y="12"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L15D6bRZEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L15D6rRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L15D67RZEe6Oh-tQ4nrr5A" points="[-59, 43, 110, -82]$[-149, 110, 20, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L15q9rRZEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L15q97RZEe6Oh-tQ4nrr5A" id="(0.1485148514851485,0.2054794520547945)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_OGueFbRZEe6Oh-tQ4nrr5A" type="4001" element="_OGsB2LRZEe6Oh-tQ4nrr5A" source="_KIVV47RZEe6Oh-tQ4nrr5A" target="_OGt3CLRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_OGvFILRZEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OGvFIbRZEe6Oh-tQ4nrr5A" x="-7" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_OGvFIrRZEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OGvFI7RZEe6Oh-tQ4nrr5A" x="5" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_OGvFJLRZEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OGvFJbRZEe6Oh-tQ4nrr5A" x="9" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_OGueFrRZEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_OGueF7RZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OGueGLRZEe6Oh-tQ4nrr5A" points="[-10, 43, 19, -82]$[-26, 110, 3, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OGvFJrRZEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OGvFJ7RZEe6Oh-tQ4nrr5A" id="(0.12820512820512822,0.2054794520547945)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_QetpI7RZEe6Oh-tQ4nrr5A" type="4001" element="_QerM5LRZEe6Oh-tQ4nrr5A" source="_KIVV47RZEe6Oh-tQ4nrr5A" target="_QetCELRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_QetpJ7RZEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QetpKLRZEe6Oh-tQ4nrr5A" x="-2" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QetpKbRZEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QetpKrRZEe6Oh-tQ4nrr5A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QetpK7RZEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QetpLLRZEe6Oh-tQ4nrr5A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_QetpJLRZEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_QetpJbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QetpJrRZEe6Oh-tQ4nrr5A" points="[40, 43, -79, -82]$[104, 110, -15, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QeuQMLRZEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QeuQMbRZEe6Oh-tQ4nrr5A" id="(0.16853932584269662,0.2054794520547945)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_KIVV4bRZEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_KIVV4rRZEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_KIUu07RZEe6Oh-tQ4nrr5A" name="Hashtag" outgoingEdges="_L12npLRZEe6Oh-tQ4nrr5A _OGsB2LRZEe6Oh-tQ4nrr5A _QerM5LRZEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Domain" href="MyHRM.microservices#//@microservices.0/@domains.0"/>
+      <semanticElements xmi:type="Domain" href="MyHRM.microservices#//@microservices.0/@domains.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_KIUu1LRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='domainNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='domainNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L10ycLRZEe6Oh-tQ4nrr5A" name="name" incomingEdges="_L12npLRZEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@domains.0/@variables.0"/>
+      <semanticElements xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@domains.0/@variables.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_L11ZgLRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='variableNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='variableNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_OGqMoLRZEe6Oh-tQ4nrr5A" name="subscribedHashtag" incomingEdges="_OGsB2LRZEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@domains.0/@variables.1"/>
+      <semanticElements xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@domains.0/@variables.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_OGqMobRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='variableNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='variableNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_QepXsLRZEe6Oh-tQ4nrr5A" name="counter" incomingEdges="_QerM5LRZEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@domains.0/@variables.2"/>
+      <semanticElements xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@domains.0/@variables.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_QepXsbRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='variableNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='variableNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L12npLRZEe6Oh-tQ4nrr5A" name="has" sourceNode="_KIUu07RZEe6Oh-tQ4nrr5A" targetNode="_L10ycLRZEe6Oh-tQ4nrr5A">
+      <target xmi:type="Domain" href="MyHRM.microservices#//@microservices.0/@domains.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L12npbRZEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@edgeMappings[name='variablesEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L12nprRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@edgeMappings[name='variablesEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OGsB2LRZEe6Oh-tQ4nrr5A" name="has" sourceNode="_KIUu07RZEe6Oh-tQ4nrr5A" targetNode="_OGqMoLRZEe6Oh-tQ4nrr5A">
+      <target xmi:type="Domain" href="MyHRM.microservices#//@microservices.0/@domains.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_OGsB2bRZEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@edgeMappings[name='variablesEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_OGsB2rRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@edgeMappings[name='variablesEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_QerM5LRZEe6Oh-tQ4nrr5A" name="has" sourceNode="_KIUu07RZEe6Oh-tQ4nrr5A" targetNode="_QepXsLRZEe6Oh-tQ4nrr5A">
+      <target xmi:type="Domain" href="MyHRM.microservices#//@microservices.0/@domains.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_QerM5bRZEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@edgeMappings[name='variablesEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_QerM5rRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@edgeMappings[name='variablesEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_KIUHwLRZEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer"/>
+    <target xmi:type="Domain" href="MyHRM.microservices#//@microservices.0/@domains.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_YRm9sLRZEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_YRnkwrRZEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_YRnkw7RZEe6Oh-tQ4nrr5A" type="Sirius" element="_YRm9sLRZEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_YRoy4LRZEe6Oh-tQ4nrr5A" type="2001" element="_YRoL0LRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_YRoy47RZEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_YRoy5LRZEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_YRoy5bRZEe6Oh-tQ4nrr5A" type="3003" element="_YRoL0bRZEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_YRoy5rRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YRoy57RZEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_YRoy4bRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YRoy4rRZEe6Oh-tQ4nrr5A" x="228" y="56" width="177" height="93"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Z3NChLRZEe6Oh-tQ4nrr5A" type="2001" element="_Z3JYILRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_Z3NCh7RZEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Z3NCiLRZEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Z3NpkLRZEe6Oh-tQ4nrr5A" type="3003" element="_Z3JYIbRZEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Z3NpkbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z3NpkrRZEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Z3NChbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z3NChrRZEe6Oh-tQ4nrr5A" x="188" y="204" width="85" height="69"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_b9Z6CLRZEe6Oh-tQ4nrr5A" type="2001" element="_b9W2sLRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_b9ahELRZEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_b9ahEbRZEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_b9ahErRZEe6Oh-tQ4nrr5A" type="3003" element="_b9W2sbRZEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_b9ahE7RZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b9ahFLRZEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_b9Z6CbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b9Z6CrRZEe6Oh-tQ4nrr5A" x="344" y="204" width="89" height="73"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_YRnkxLRZEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_Z3Npk7RZEe6Oh-tQ4nrr5A" type="4001" element="_Z3LNVLRZEe6Oh-tQ4nrr5A" source="_YRoy4LRZEe6Oh-tQ4nrr5A" target="_Z3NChLRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_Z3Npl7RZEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z3NpmLRZEe6Oh-tQ4nrr5A" x="-1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Z3OQoLRZEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z3OQobRZEe6Oh-tQ4nrr5A" x="1" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Z3OQorRZEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z3OQo7RZEe6Oh-tQ4nrr5A" x="2" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Z3NplLRZEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Z3NplbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Z3NplrRZEe6Oh-tQ4nrr5A" points="[-46, 47, 67, -70]$[-99, 102, 14, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z3OQpLRZEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z3OQpbRZEe6Oh-tQ4nrr5A" id="(0.17647058823529413,0.21739130434782608)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_b9ahFbRZEe6Oh-tQ4nrr5A" type="4001" element="_b9YE2rRZEe6Oh-tQ4nrr5A" source="_YRoy4LRZEe6Oh-tQ4nrr5A" target="_b9Z6CLRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_b9bIILRZEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b9bIIbRZEe6Oh-tQ4nrr5A" x="-2" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_b9bIIrRZEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b9bII7RZEe6Oh-tQ4nrr5A" x="-1" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_b9bIJLRZEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b9bIJbRZEe6Oh-tQ4nrr5A" x="2" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_b9ahFrRZEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_b9ahF7RZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_b9ahGLRZEe6Oh-tQ4nrr5A" points="[17, 47, -26, -70]$[37, 102, -6, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b9bIJrRZEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b9bIJ7RZEe6Oh-tQ4nrr5A" id="(0.16853932584269662,0.2054794520547945)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_YRoL07RZEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_YRoL1LRZEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_YRoL0LRZEe6Oh-tQ4nrr5A" name="HashtagDTO" outgoingEdges="_Z3LNVLRZEe6Oh-tQ4nrr5A _b9YE2rRZEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Dto" href="MyHRM.microservices#//@microservices.0/@dtos.0"/>
+      <semanticElements xmi:type="Dto" href="MyHRM.microservices#//@microservices.0/@dtos.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_YRoL0bRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='dtoNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='dtoNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Z3JYILRZEe6Oh-tQ4nrr5A" name="subscribedHashtag" incomingEdges="_Z3LNVLRZEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@dtos.0/@variables.0"/>
+      <semanticElements xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@dtos.0/@variables.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_Z3JYIbRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='variableNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='variableNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_b9W2sLRZEe6Oh-tQ4nrr5A" name="counter" incomingEdges="_b9YE2rRZEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@dtos.0/@variables.1"/>
+      <semanticElements xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@dtos.0/@variables.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_b9W2sbRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='variableNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='variableNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Z3LNVLRZEe6Oh-tQ4nrr5A" name="has" sourceNode="_YRoL0LRZEe6Oh-tQ4nrr5A" targetNode="_Z3JYILRZEe6Oh-tQ4nrr5A">
+      <target xmi:type="Dto" href="MyHRM.microservices#//@microservices.0/@dtos.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Z3LNVbRZEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@edgeMappings[name='variablesEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Z3LNVrRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@edgeMappings[name='variablesEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_b9YE2rRZEe6Oh-tQ4nrr5A" name="has" sourceNode="_YRoL0LRZEe6Oh-tQ4nrr5A" targetNode="_b9W2sLRZEe6Oh-tQ4nrr5A">
+      <target xmi:type="Dto" href="MyHRM.microservices#//@microservices.0/@dtos.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_b9Yr4LRZEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@edgeMappings[name='variablesEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_b9Yr4bRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@edgeMappings[name='variablesEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_YRm9sbRZEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer"/>
+    <target xmi:type="Dto" href="MyHRM.microservices#//@microservices.0/@dtos.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_lVNW4LRZEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_lVN98rRZEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_lVN987RZEe6Oh-tQ4nrr5A" type="Sirius" element="_lVNW4LRZEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_lVPMFLRZEe6Oh-tQ4nrr5A" type="2001" element="_lVOlALRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_lVPzILRZEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_lVPzIbRZEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lVQaMLRZEe6Oh-tQ4nrr5A" type="3003" element="_lVOlAbRZEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_lVQaMbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lVQaMrRZEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lVPMFbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lVPMFrRZEe6Oh-tQ4nrr5A" x="552" y="88" width="141" height="97"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lVPzIrRZEe6Oh-tQ4nrr5A" type="2001" element="_lVOlA7RZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_lVPzJbRZEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_lVPzJrRZEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lVQaM7RZEe6Oh-tQ4nrr5A" type="3003" element="_lVOlBLRZEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_lVQaNLRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lVQaNbRZEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lVPzI7RZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lVPzJLRZEe6Oh-tQ4nrr5A" x="196" y="88" width="145" height="89"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gvO00LRaEe6Oh-tQ4nrr5A" type="2001" element="_gvLKdLRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_gvPb4LRaEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gvPb4bRaEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gvQC8LRaEe6Oh-tQ4nrr5A" type="3003" element="_gvLKdbRaEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gvQC8bRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvQC8rRaEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gvO00bRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvO00rRaEe6Oh-tQ4nrr5A" x="184" y="232" width="109" height="89"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gvPb4rRaEe6Oh-tQ4nrr5A" type="2001" element="_gvLxgbRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_gvPb5bRaEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gvPb5rRaEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gvQC87RaEe6Oh-tQ4nrr5A" type="3003" element="_gvLxgrRaEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gvQC9LRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvQC9bRaEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gvPb47RaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvPb5LRaEe6Oh-tQ4nrr5A" x="388" y="232" width="113" height="81"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_lVN99LRZEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_lVQaNrRZEe6Oh-tQ4nrr5A" type="4001" element="_lVOlBrRZEe6Oh-tQ4nrr5A" source="_lVPzIrRZEe6Oh-tQ4nrr5A" target="_lVPMFLRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_lVQaOrRZEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lVQaO7RZEe6Oh-tQ4nrr5A" x="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lVRBQLRZEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lVRBQbRZEe6Oh-tQ4nrr5A" x="2" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lVRBQrRZEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lVRBQ7RZEe6Oh-tQ4nrr5A" x="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_lVQaN7RZEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_lVQaOLRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lVQaObRZEe6Oh-tQ4nrr5A" points="[15, 1, -341, -29]$[356, 30, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lVRBRLRZEe6Oh-tQ4nrr5A" id="(0.10344827586206896,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lVRBRbRZEe6Oh-tQ4nrr5A" id="(0.10638297872340426,0.30927835051546393)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_gvQqALRaEe6Oh-tQ4nrr5A" type="4001" element="_gvLxiLRaEe6Oh-tQ4nrr5A" source="_lVPzIrRZEe6Oh-tQ4nrr5A" target="_gvO00LRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_gvQqBLRaEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvQqBbRaEe6Oh-tQ4nrr5A" x="11" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gvQqBrRaEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvQqB7RaEe6Oh-tQ4nrr5A" x="9" y="-5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gvQqCLRaEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvQqCbRaEe6Oh-tQ4nrr5A" x="-10" y="3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gvQqAbRaEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gvQqArRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gvQqA7RaEe6Oh-tQ4nrr5A" points="[-27, 45, 42, -70]$[-60, 100, 9, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gvRRELRaEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gvRREbRaEe6Oh-tQ4nrr5A" id="(0.13761467889908258,0.16853932584269662)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_gvRRErRaEe6Oh-tQ4nrr5A" type="4001" element="_gvMYlLRaEe6Oh-tQ4nrr5A" source="_lVPzIrRZEe6Oh-tQ4nrr5A" target="_gvPb4rRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_gvRRFrRaEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvRRF7RaEe6Oh-tQ4nrr5A" x="-2" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gvRRGLRaEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvRRGbRaEe6Oh-tQ4nrr5A" x="3" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gvRRGrRaEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvRRG7RaEe6Oh-tQ4nrr5A" x="3" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gvRRE7RaEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gvRRFLRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gvRRFbRaEe6Oh-tQ4nrr5A" points="[52, 45, -83, -70]$[120, 102, -15, -13]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gvRRHLRaEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gvRRHbRaEe6Oh-tQ4nrr5A" id="(0.13274336283185842,0.18518518518518517)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_lVPMErRZEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_lVPME7RZEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_lVOlALRZEe6Oh-tQ4nrr5A" name="HashtagsRepository" incomingEdges="_lVOlBrRZEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Repository" href="MyHRM.microservices#//@microservices.0/@repositories.0"/>
+      <semanticElements xmi:type="Repository" href="MyHRM.microservices#//@microservices.0/@repositories.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_lVOlAbRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_lVOlA7RZEe6Oh-tQ4nrr5A" name="SubscriptionsConsumer" outgoingEdges="_lVOlBrRZEe6Oh-tQ4nrr5A _gvLxiLRaEe6Oh-tQ4nrr5A _gvMYlLRaEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Subscriber" href="MyHRM.microservices#//@microservices.0/@subscribers.0"/>
+      <semanticElements xmi:type="Subscriber" href="MyHRM.microservices#//@microservices.0/@subscribers.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_lVOlBLRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='subscriberNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='subscriberNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_lVOlBrRZEe6Oh-tQ4nrr5A" name="Injects" sourceNode="_lVOlA7RZEe6Oh-tQ4nrr5A" targetNode="_lVOlALRZEe6Oh-tQ4nrr5A">
+      <target xmi:type="Subscriber" href="MyHRM.microservices#//@microservices.0/@subscribers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_lVOlB7RZEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@edgeMappings[name='injectsEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_lVOlCLRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@edgeMappings[name='injectsEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gvLKdLRaEe6Oh-tQ4nrr5A" name="userUnsubscribed" incomingEdges="_gvLxiLRaEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.0"/>
+      <semanticElements xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gvLKdbRaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='eventStreamSubscriberNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='eventStreamSubscriberNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gvLxgbRaEe6Oh-tQ4nrr5A" name="userSubscribed" incomingEdges="_gvMYlLRaEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.1"/>
+      <semanticElements xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gvLxgrRaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='eventStreamSubscriberNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='eventStreamSubscriberNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_gvLxiLRaEe6Oh-tQ4nrr5A" name="References" sourceNode="_lVOlA7RZEe6Oh-tQ4nrr5A" targetNode="_gvLKdLRaEe6Oh-tQ4nrr5A">
+      <target xmi:type="Subscriber" href="MyHRM.microservices#//@microservices.0/@subscribers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_gvMYkLRaEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@edgeMappings[name='refEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_gvMYkbRaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@edgeMappings[name='refEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_gvMYlLRaEe6Oh-tQ4nrr5A" name="References" sourceNode="_lVOlA7RZEe6Oh-tQ4nrr5A" targetNode="_gvLxgbRaEe6Oh-tQ4nrr5A">
+      <target xmi:type="Subscriber" href="MyHRM.microservices#//@microservices.0/@subscribers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_gvMYlbRaEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@edgeMappings[name='refEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_gvMYlrRaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@edgeMappings[name='refEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_lVNW4bRZEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer"/>
+    <target xmi:type="Subscriber" href="MyHRM.microservices#//@microservices.0/@subscribers.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_r-pwELRZEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_r-qXIrRZEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_r-qXI7RZEe6Oh-tQ4nrr5A" type="Sirius" element="_r-pwELRZEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_r-rlQLRZEe6Oh-tQ4nrr5A" type="2001" element="_r-q-MLRZEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_r-rlQ7RZEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_r-rlRLRZEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_r-rlRbRZEe6Oh-tQ4nrr5A" type="3003" element="_r-q-MbRZEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_r-rlRrRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r-rlR7RZEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_r-rlQbRZEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r-rlQrRZEe6Oh-tQ4nrr5A" x="188" y="64" width="185" height="93"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lWVi0LRaEe6Oh-tQ4nrr5A" type="2001" element="_lWR4crRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_lWVi07RaEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_lWVi1LRaEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lWVi2rRaEe6Oh-tQ4nrr5A" type="3003" element="_lWR4c7RaEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_lWVi27RaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lWVi3LRaEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lWVi0bRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lWVi0rRaEe6Oh-tQ4nrr5A" x="148" y="188" width="109" height="81"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lWVi1bRaEe6Oh-tQ4nrr5A" type="2001" element="_lWSfgbRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_lWVi2LRaEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_lWVi2bRaEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lWWJ4LRaEe6Oh-tQ4nrr5A" type="3003" element="_lWSfgrRaEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_lWWJ4bRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lWWJ4rRaEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lWVi1rRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lWVi17RaEe6Oh-tQ4nrr5A" x="320" y="188" width="117" height="81"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_r-qXJLRZEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_lWWJ47RaEe6Oh-tQ4nrr5A" type="4001" element="_lWSfhLRaEe6Oh-tQ4nrr5A" source="_r-rlQLRZEe6Oh-tQ4nrr5A" target="_lWVi0LRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_lWWJ57RaEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lWWJ6LRaEe6Oh-tQ4nrr5A" x="7" y="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lWWJ6bRaEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lWWJ6rRaEe6Oh-tQ4nrr5A" x="-7" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lWWJ67RaEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lWWJ7LRaEe6Oh-tQ4nrr5A" x="-7" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_lWWJ5LRaEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_lWWJ5bRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lWWJ5rRaEe6Oh-tQ4nrr5A" points="[-60, 47, 57, -46]$[-102, 81, 15, -12]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lWWJ7bRaEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lWWJ7rRaEe6Oh-tQ4nrr5A" id="(0.13761467889908258,0.18518518518518517)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_lWWJ77RaEe6Oh-tQ4nrr5A" type="4001" element="_lWSfibRaEe6Oh-tQ4nrr5A" source="_r-rlQLRZEe6Oh-tQ4nrr5A" target="_lWVi1bRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_lWWJ87RaEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lWWJ9LRaEe6Oh-tQ4nrr5A" x="4" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lWWJ9bRaEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lWWJ9rRaEe6Oh-tQ4nrr5A" x="-3" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lWWJ97RaEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lWWJ-LRaEe6Oh-tQ4nrr5A" x="-3" y="-7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_lWWJ8LRaEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_lWWJ8bRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lWWJ8rRaEe6Oh-tQ4nrr5A" points="[27, 47, -28, -46]$[46, 78, -9, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lWWw8LRaEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lWWw8bRaEe6Oh-tQ4nrr5A" id="(0.1282051282051282,0.18518518518518517)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_r-q-M7RZEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_r-q-NLRZEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_r-q-MLRZEe6Oh-tQ4nrr5A" name="SubscriptionsProducer" outgoingEdges="_lWSfhLRaEe6Oh-tQ4nrr5A _lWSfibRaEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Publisher" href="MyHRM.microservices#//@microservices.0/@publishers.0"/>
+      <semanticElements xmi:type="Publisher" href="MyHRM.microservices#//@microservices.0/@publishers.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_r-q-MbRZEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='publisherNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='publisherNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_lWR4crRaEe6Oh-tQ4nrr5A" name="userUnsubscribed" incomingEdges="_lWSfhLRaEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.0"/>
+      <semanticElements xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_lWR4c7RaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='eventStreamPublisherNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='eventStreamPublisherNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_lWSfgbRaEe6Oh-tQ4nrr5A" name="userSubscribed" incomingEdges="_lWSfibRaEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.1"/>
+      <semanticElements xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_lWSfgrRaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='eventStreamPublisherNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='eventStreamPublisherNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_lWSfhLRaEe6Oh-tQ4nrr5A" name="Implements" sourceNode="_r-q-MLRZEe6Oh-tQ4nrr5A" targetNode="_lWR4crRaEe6Oh-tQ4nrr5A">
+      <target xmi:type="Publisher" href="MyHRM.microservices#//@microservices.0/@publishers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_lWSfhbRaEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@edgeMappings[name='impleEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_lWSfhrRaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@edgeMappings[name='impleEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_lWSfibRaEe6Oh-tQ4nrr5A" name="Implements" sourceNode="_r-q-MLRZEe6Oh-tQ4nrr5A" targetNode="_lWSfgbRaEe6Oh-tQ4nrr5A">
+      <target xmi:type="Publisher" href="MyHRM.microservices#//@microservices.0/@publishers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_lWSfirRaEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@edgeMappings[name='impleEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_lWSfi7RaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@edgeMappings[name='impleEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_r-pwEbRZEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer"/>
+    <target xmi:type="Publisher" href="MyHRM.microservices#//@microservices.0/@publishers.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_Rggn4LRaEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_RghO8LRaEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_RghO8bRaEe6Oh-tQ4nrr5A" type="Sirius" element="_Rggn4LRaEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_RgidELRaEe6Oh-tQ4nrr5A" type="2001" element="_RghO87RaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_RgidE7RaEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_RgidFLRaEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_RgjEIrRaEe6Oh-tQ4nrr5A" type="3003" element="_Rgh2ALRaEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_RgjEI7RaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RgjEJLRaEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_RgidEbRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RgidErRaEe6Oh-tQ4nrr5A" x="180" y="48" width="169" height="69"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_RgidFbRaEe6Oh-tQ4nrr5A" type="2001" element="_Rgh2ArRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_RgjEILRaEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_RgjEIbRaEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_RgjEJbRaEe6Oh-tQ4nrr5A" type="3003" element="_Rgh2A7RaEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_RgjEJrRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RgjEJ7RaEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_RgidFrRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RgidF7RaEe6Oh-tQ4nrr5A" x="210" y="188" width="109" height="69"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_RghO8rRaEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_RgjrMLRaEe6Oh-tQ4nrr5A" type="4001" element="_Rgh2BbRaEe6Oh-tQ4nrr5A" source="_RgidELRaEe6Oh-tQ4nrr5A" target="_RgidFbRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_RgjrNLRaEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RgjrNbRaEe6Oh-tQ4nrr5A" x="-5" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_RgkSQLRaEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RgkSQbRaEe6Oh-tQ4nrr5A" x="-7" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Rgk5ULRaEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rgk5UbRaEe6Oh-tQ4nrr5A" x="1" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_RgjrMbRaEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_RgjrMrRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RgjrM7RaEe6Oh-tQ4nrr5A" points="[12, 69, -18, -101]$[24, 140, -6, -30]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rgk5UrRaEe6Oh-tQ4nrr5A" id="(0.08875739644970414,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rgk5U7RaEe6Oh-tQ4nrr5A" id="(0.13761467889908258,0.43478260869565216)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Rgh2CrRaEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_Rgh2C7RaEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_RghO87RaEe6Oh-tQ4nrr5A" name="userUnsubscribed" outgoingEdges="_Rgh2BbRaEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.0"/>
+      <semanticElements xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_Rgh2ALRaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventStreamNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventStreamNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Rgh2ArRaEe6Oh-tQ4nrr5A" name="userUnsubscribed" incomingEdges="_Rgh2BbRaEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Event" href="MyHRM.microservices#//@events.1"/>
+      <semanticElements xmi:type="Event" href="MyHRM.microservices#//@events.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_Rgh2A7RaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Rgh2BbRaEe6Oh-tQ4nrr5A" sourceNode="_RghO87RaEe6Oh-tQ4nrr5A" targetNode="_Rgh2ArRaEe6Oh-tQ4nrr5A">
+      <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Rgh2BrRaEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@edgeMappings[name='hasEventEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Rgh2B7RaEe6Oh-tQ4nrr5A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@edgeMappings[name='hasEventEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_Rggn4bRaEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer"/>
+    <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_XhnOsLRaEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Xhn1wLRaEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_Xhn1wbRaEe6Oh-tQ4nrr5A" type="Sirius" element="_XhnOsLRaEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_XhpD4LRaEe6Oh-tQ4nrr5A" type="2001" element="_Xhn1w7RaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_XhpD47RaEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_XhpD5LRaEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_XhpD6rRaEe6Oh-tQ4nrr5A" type="3003" element="_Xhn1xLRaEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_XhpD67RaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XhpD7LRaEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_XhpD4bRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XhpD4rRaEe6Oh-tQ4nrr5A" x="252" y="72" width="142" height="81"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_XhpD5bRaEe6Oh-tQ4nrr5A" type="2001" element="_Xhoc0LRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_XhpD6LRaEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_XhpD6bRaEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Xhpq8LRaEe6Oh-tQ4nrr5A" type="3003" element="_Xhoc0bRaEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Xhpq8bRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xhpq8rRaEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_XhpD5rRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XhpD57RaEe6Oh-tQ4nrr5A" x="280" y="212" width="121" height="73"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_Xhn1wrRaEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_Xhpq87RaEe6Oh-tQ4nrr5A" type="4001" element="_Xhoc07RaEe6Oh-tQ4nrr5A" source="_XhpD4LRaEe6Oh-tQ4nrr5A" target="_XhpD5bRaEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_Xhpq97RaEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xhpq-LRaEe6Oh-tQ4nrr5A" x="-1" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Xhpq-bRaEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xhpq-rRaEe6Oh-tQ4nrr5A" x="-2" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Xhpq-7RaEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xhpq_LRaEe6Oh-tQ4nrr5A" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Xhpq9LRaEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Xhpq9bRaEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Xhpq9rRaEe6Oh-tQ4nrr5A" points="[13, 81, -15, -89]$[23, 140, -5, -30]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XhqSALRaEe6Oh-tQ4nrr5A" id="(0.1056338028169014,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XhqSAbRaEe6Oh-tQ4nrr5A" id="(0.12396694214876033,0.410958904109589)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Xhoc2LRaEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_Xhoc2bRaEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Xhn1w7RaEe6Oh-tQ4nrr5A" name="userSubscribed" outgoingEdges="_Xhoc07RaEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.1"/>
+      <semanticElements xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_Xhn1xLRaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventStreamNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventStreamNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Xhoc0LRaEe6Oh-tQ4nrr5A" name="userSubscribed" incomingEdges="_Xhoc07RaEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Event" href="MyHRM.microservices#//@events.0"/>
+      <semanticElements xmi:type="Event" href="MyHRM.microservices#//@events.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_Xhoc0bRaEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Xhoc07RaEe6Oh-tQ4nrr5A" sourceNode="_Xhn1w7RaEe6Oh-tQ4nrr5A" targetNode="_Xhoc0LRaEe6Oh-tQ4nrr5A">
+      <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Xhoc1LRaEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@edgeMappings[name='hasEventEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Xhoc1bRaEe6Oh-tQ4nrr5A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@edgeMappings[name='hasEventEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_XhnOsbRaEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer"/>
+    <target xmi:type="EventStream" href="MyHRM.microservices#//@eventStreams.1"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_qy3qsLRfEe6Oh-tQ4nrr5A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_qy4RwLRfEe6Oh-tQ4nrr5A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_qy4RwbRfEe6Oh-tQ4nrr5A" type="Sirius" element="_qy3qsLRfEe6Oh-tQ4nrr5A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_qy5f47RfEe6Oh-tQ4nrr5A" type="2001" element="_qy440LRfEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_qy6G8LRfEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_qy6G8bRfEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_qy6G8rRfEe6Oh-tQ4nrr5A" type="3003" element="_qy440bRfEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qy6G87RfEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qy6G9LRfEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_qy5f5LRfEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qy5f5bRfEe6Oh-tQ4nrr5A" x="344" y="64" width="209" height="97"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_s7YPULRfEe6Oh-tQ4nrr5A" type="2001" element="_s7TW0LRfEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_s7YPU7RfEe6Oh-tQ4nrr5A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_s7YPVLRfEe6Oh-tQ4nrr5A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_s7YPVbRfEe6Oh-tQ4nrr5A" type="3003" element="_s7T94LRfEe6Oh-tQ4nrr5A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_s7YPVrRfEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s7YPV7RfEe6Oh-tQ4nrr5A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_s7YPUbRfEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s7YPUrRfEe6Oh-tQ4nrr5A" x="408" y="224" width="81" height="53"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_qy4RwrRfEe6Oh-tQ4nrr5A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_s7Y2YLRfEe6Oh-tQ4nrr5A" type="4001" element="_s7XoQLRfEe6Oh-tQ4nrr5A" source="_qy5f47RfEe6Oh-tQ4nrr5A" target="_s7YPULRfEe6Oh-tQ4nrr5A">
+          <children xmi:type="notation:Node" xmi:id="_s7Y2ZLRfEe6Oh-tQ4nrr5A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s7Y2ZbRfEe6Oh-tQ4nrr5A" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_s7Y2ZrRfEe6Oh-tQ4nrr5A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s7Y2Z7RfEe6Oh-tQ4nrr5A" x="-1" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_s7Y2aLRfEe6Oh-tQ4nrr5A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s7Y2abRfEe6Oh-tQ4nrr5A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_s7Y2YbRfEe6Oh-tQ4nrr5A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_s7Y2YrRfEe6Oh-tQ4nrr5A" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_s7Y2Y7RfEe6Oh-tQ4nrr5A" points="[-10, 49, 15, -78]$[-23, 112, 2, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s7ZdcLRfEe6Oh-tQ4nrr5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s7ZdcbRfEe6Oh-tQ4nrr5A" id="(0.18518518518518517,0.2830188679245283)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_qy5f4bRfEe6Oh-tQ4nrr5A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_qy5f4rRfEe6Oh-tQ4nrr5A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_qy440LRfEe6Oh-tQ4nrr5A" name="getTop10AlsoSubscribedHashtag" outgoingEdges="_s7XoQLRfEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Api" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.1"/>
+      <semanticElements xmi:type="Api" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_qy440bRfEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='functionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='functionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_s7TW0LRfEe6Oh-tQ4nrr5A" name="name" incomingEdges="_s7XoQLRfEe6Oh-tQ4nrr5A" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.1/@parameters.0"/>
+      <semanticElements xmi:type="Variable" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.1/@parameters.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_s7T94LRfEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='variableNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='variableNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_s7XoQLRfEe6Oh-tQ4nrr5A" name="param" sourceNode="_qy440LRfEe6Oh-tQ4nrr5A" targetNode="_s7TW0LRfEe6Oh-tQ4nrr5A">
+      <target xmi:type="Api" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_s7XoQbRfEe6Oh-tQ4nrr5A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@edgeMappings[name='hasVarEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_s7XoQrRfEe6Oh-tQ4nrr5A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@edgeMappings[name='hasVarEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_qy3qsbRfEe6Oh-tQ4nrr5A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myTHM.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer"/>
+    <target xmi:type="Api" href="MyHRM.microservices#//@microservices.0/@controllers.0/@apis.1"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

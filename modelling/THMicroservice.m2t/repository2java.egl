@@ -1,0 +1,26 @@
+package [%=r.classPackage.toLowerCase()%];
+
+[%=out.startPreserve("//", "", "execute", true)%]
+[%=out.stopPreserve()%]
+
+@Repository
+public interface [%=r.className.ftuc()%] extends CrudRepository<Hashtag, Long> {
+	
+	[%for (func in r.functions) {%]
+	[%=out.startPreserve("//", "", "execute", true)%]
+	[%=out.stopPreserve()%]
+	[%=func.outputType%] [%=func.name%]([%=func.getParameters()%]);
+	
+	[%}%]
+}
+
+
+[%
+operation Function getParameters() {
+	if (self.parameters.isEmpty()) {
+		return "";
+	} else {
+		return self.parameters.concat(", ");
+	}
+}
+%]

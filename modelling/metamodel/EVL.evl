@@ -1,0 +1,54 @@
+context TopNode {
+	
+	constraint OneMicroservice {
+	
+		check : self.microservices.size() > 0
+				
+		message : "There should be at least one microservice"
+		
+	}
+}
+
+context Event {
+	
+	critique EventInEventStream {
+	
+		check : EventStream.all.exists(e|e.EventType = self)
+				
+		message : self.name + "should be used in least one event stream."
+		
+	}
+}
+
+context EventStream {
+	
+	constraint EventStreamInPublisher {
+	
+		check : Publisher.all.exists(p|p.eventStreams.includes(self))
+				
+		message : self.name + " is not used in least one publisher."
+		
+	}
+	
+		constraint EventStreamInSubscriber {
+	
+		check : Subscriber.all.exists(p|p.eventStreams.includes(self))
+				
+		message : self.name + " is not used in least one subscriber."
+		
+	}
+}
+
+context Microservice {
+	
+	constraint OneHealthResourceInMicroservice {
+	
+		check : self.controllers.exists(c|c.apis.exists(api|api.annotation = "Get" and api.path = "/"))
+				
+		message : self.name + " needs at least one “health” resource using" +
+		 "the HTTP GET method and taking no parameters, for reporting if it is working correctly."
+		
+	}
+}
+
+

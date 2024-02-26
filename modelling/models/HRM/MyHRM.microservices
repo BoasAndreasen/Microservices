@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TopNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="Microservices">
+  <events name="userSubscribed" keyType="String" keyName="title" valType="String" valName="hashtagSet"/>
+  <events name="userUnsubscribed" keyType="String" keyName="title" valType="String" valName="hashtagSet"/>
+  <eventStreams topic="hashtag-unsubscribed" name="userUnsubscribed" EventType="//@events.1"/>
+  <eventStreams topic="hashtag-subscribed" name="userSubscribed" EventType="//@events.0"/>
+  <microservices>
+    <subscribers classPackage="uk.ac.york.eng2.hashtagRecommendation.events" className="SubscriptionsConsumer" injections="//@microservices.0/@repositories.0" eventStreams="//@eventStreams.0 //@eventStreams.1"/>
+    <publishers classPackage="uk.ac.york.eng2.hashtagRecommendation.events" className="SubscriptionsProducer" eventStreams="//@eventStreams.0 //@eventStreams.1"/>
+    <controllers classPackage="uk.ac.york.eng2.hashtagRecommendation.controllers" className="HashtagsController" path="/hashtagRecommendation" injections="//@microservices.0/@repositories.0">
+      <apis name="list" outputType="Iterable&lt;Hashtag>" body="true" annotation="Get" path="/"/>
+      <apis name="getTop10AlsoSubscribedHashtag" outputType="List&lt;HashtagDTO>" annotation="Get" path="/{name}">
+        <parameters type="String" name="name"/>
+      </apis>
+    </controllers>
+    <domains classPackage="uk.ac.york.eng2.hashtagRecommendation.domain" className="Hashtag">
+      <variables type="String" name="name"/>
+      <variables type="String" name="subscribedHashtag"/>
+      <variables type="Integer" name="counter"/>
+    </domains>
+    <dtos classPackage="uk.ac.york.eng2.hashtagRecommendation.dto" className="HashtagDTO">
+      <variables type="String" name="subscribedHashtag"/>
+      <variables type="Integer" name="counter"/>
+    </dtos>
+    <repositories classPackage="uk.ac.york.eng2.hashtagRecommendation.repositories" className="HashtagsRepository">
+      <functions name="findByNameOrderByCounterDesc" outputType="List&lt;HashtagDTO>">
+        <parameters type="String" name="name"/>
+      </functions>
+      <functions name="findByNameAndSubscribedHashtag" outputType="Optional&lt;Hashtag>">
+        <parameters type="String" name="name"/>
+        <parameters type="String" name="subscribedHashtag"/>
+      </functions>
+    </repositories>
+  </microservices>
+</TopNode>

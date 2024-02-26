@@ -1,0 +1,37 @@
+package [%=c.classPackage%];
+
+[%=out.startPreserve("//", "", "execute", true)%]
+[%=out.stopPreserve()%]
+
+@Controller("[%=c.path%]")
+public class [%=c.className.ftuc()%] {
+	
+	[%for (r in c.injections) {%]
+	@Inject
+	[%=r.className%] [%=r.className.ftlc()%];
+	
+	[%}%]
+	[%=out.startPreserve("//", "", "execute", true)%]
+	[%=out.stopPreserve()%]
+	
+	[%for (a in c.apis) {%]
+	[%=out.startPreserve("//", "", "execute", true)%]
+	[%=out.stopPreserve()%]
+	@[%=a.annotation%]("[%=a.path%]")
+	public [%=a.outputType%] [%=a.name%]([%=a.getParameters()%]) {
+		[%=out.startPreserve("//", "", "execute", true)%]
+		[%=out.stopPreserve()%]
+	}
+	
+	[%}%]
+}
+
+[%
+operation Api getParameters() {
+	if (self.parameters.isEmpty()) {
+		return "";
+	} else {
+		return self.parameters.collect(p|p.type + " " + p.name).concat(", ");
+	}
+}
+%]

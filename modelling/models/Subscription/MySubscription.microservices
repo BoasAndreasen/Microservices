@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TopNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="Microservices">
+  <events name="userSubscribed" keyType="String" keyName="subscribedHashtag" valType="String" valName="hashtag"/>
+  <events name="userUnsubscribed" keyType="String" keyName="username" valType="String" valName="hashtag"/>
+  <events name="watchedVideo" keyType="String" keyName="title" valType="String" valName="hashtagSet"/>
+  <eventStreams topic="hashtag-unsubscribed" name="userUnsubscribed" EventType="//@events.1"/>
+  <eventStreams topic="hashtag-subscribed" name="userSubscribed" EventType="//@events.0"/>
+  <eventStreams topic="video-watched" name="watchedVideo" EventType="//@events.2"/>
+  <microservices>
+    <subscribers classPackage="uk.ac.york.eng2.subscriptions.events" className="VideosConsumer" injections="//@microservices.0/@repositories.2 //@microservices.0/@repositories.0" eventStreams="//@eventStreams.2"/>
+    <publishers classPackage="uk.ac.york.eng2.subscriptions.events" className="SubscriptionsProducer" eventStreams="//@eventStreams.0 //@eventStreams.1"/>
+    <controllers classPackage="uk.ac.york.eng2.subscriptions.controllers" className="HashtagsController" path="/subscriptionHashtags" injections="//@microservices.0/@repositories.0 //@microservices.0/@repositories.1">
+      <apis name="list" outputType="Iterable&lt;Hashtag> " body="true" annotation="Get" path="/"/>
+      <apis name="add" outputType="HttpResponse&lt;Void>" body="true" annotation="Post" path="/">
+        <parameters type="@Body HashtagDTO" name="hashtagDetails"/>
+      </apis>
+      <apis name="getHashtag" outputType="HashtagDTO" body="true" annotation="Get" path="/{id}">
+        <parameters type="long" name="id"/>
+      </apis>
+      <apis name="getHashtagByName" outputType="Hashtag" body="true" annotation="Get" path="/byName/{name}">
+        <parameters type="String" name="name"/>
+      </apis>
+      <apis name="updateHashtag" outputType="HttpResponse&lt;Void>" body="true" annotation="Put" path="/{id}">
+        <parameters type="long" name="id"/>
+        <parameters type="@Body HashtagDTO" name="hashtagDetails"/>
+      </apis>
+      <apis name="deleteHashtag" outputType="HttpResponse&lt;Void>" annotation="Delete" path="/{name}">
+        <parameters type="String" name="name"/>
+      </apis>
+      <apis name="getSubscriber" outputType="Iterable&lt;User>" body="true" annotation="Get" path="/{name}/subscribers">
+        <parameters type="String" name="name"/>
+      </apis>
+      <apis name="addSubscriber" outputType="HttpResponse&lt;String>" annotation="Put" path="/{name}/subscribers/{username}">
+        <parameters type="String" name="name"/>
+        <parameters type="String" name="username"/>
+      </apis>
+      <apis name="removeSubscriber" outputType="HttpResponse&lt;String>" body="true" annotation="Delete" path="/{name}/subscribers/{username}">
+        <parameters type="String" name="name"/>
+        <parameters type="String" name="username"/>
+      </apis>
+      <apis name="getHashtaggedVideos" outputType="Iterable&lt;Video>" body="true" annotation="Get" path="/{name}/hashtagged">
+        <parameters type="String" name="name"/>
+      </apis>
+      <apis name="getSortedHashtaggedVideos" outputType="Iterable&lt;Video>" body="true" annotation="Get" path="/{name}/hashtagged/topTen">
+        <parameters type="String" name="name"/>
+      </apis>
+    </controllers>
+    <controllers classPackage="uk.ac.york.eng2.subscriptions.controllers" className="UsersController" path="/subscriptionUsers" injections="//@microservices.0/@repositories.1">
+      <apis name="list" outputType="Iterable&lt;User>" body="true" annotation="Get" path="/"/>
+      <apis name="add" outputType="HttpResponse&lt;Void>" body="true" annotation="Post" path="/">
+        <parameters type="@Body UserDTO" name="userDetails"/>
+      </apis>
+      <apis name="getUser" outputType="UserDTO" annotation="Get" path="/{id}">
+        <parameters type="long" name="id"/>
+      </apis>
+      <apis name="getUserByUsername" outputType="User" body="true" annotation="Get" path="/byUsername/{username}">
+        <parameters type="String" name="username"/>
+      </apis>
+      <apis name="updateUser" outputType="HttpResponse&lt;Void>" annotation="Put" path="/{id}">
+        <parameters type="long" name="id"/>
+        <parameters type="@Body UserDTO" name="userDetails"/>
+      </apis>
+      <apis name="deleteUser" outputType="HttpResponse&lt;Void>" body="true" annotation="Delete" path="/{username}">
+        <parameters type="String" name="username"/>
+      </apis>
+      <apis name="getSubscribedHashtags" outputType="Iterable&lt;Hashtag>" body="true" annotation="Get" path="/{username}/subscribedHashtags">
+        <parameters type="String" name="username"/>
+      </apis>
+      <apis name="topTenVideosUsingSubscribedHashtags" outputType="Iterable&lt;Video>" body="true" annotation="Get" path="/{username}/topTenVideosUsingSubscribedHashtags">
+        <parameters type="String" name="username"/>
+      </apis>
+    </controllers>
+    <controllers classPackage="uk.ac.york.eng2.subscriptions.controllers" className="VideosController" path="/subscriptionVideos" injections="//@microservices.0/@repositories.2">
+      <apis name="list" outputType="Iterable&lt;Video>" body="true" annotation="Get" path="/"/>
+      <apis name="add" outputType="HttpResponse&lt;Void>" body="true" annotation="Post" path="/">
+        <parameters type="@Body VideoDTO" name="videoDetails"/>
+      </apis>
+      <apis name="getVideo" outputType="VideoDTO" body="true" annotation="Get" path="/{id}">
+        <parameters type="long" name="id"/>
+      </apis>
+      <apis name="getVideoidByName" outputType="long" body="true" annotation="Get" path="/byName/{title}/id">
+        <parameters type="String" name="title"/>
+      </apis>
+      <apis name="updateVideo" outputType="HttpResponse&lt;Void> " body="true" annotation="Put" path="/{id}">
+        <parameters type="long" name="id"/>
+        <parameters type="@Body VideoDTO" name="videoDetails"/>
+      </apis>
+      <apis name="deleteVideo" outputType="HttpResponse&lt;Void>" body="true" annotation="Delete" path="/{title}">
+        <parameters type="String" name="title"/>
+      </apis>
+    </controllers>
+    <domains classPackage="uk.ac.york.eng2.subscriptions.domain" className="Hashtag">
+      <variables type="String" name="name"/>
+      <variables type="Set&lt;User>" name="subscribedUsers"/>
+      <variables type=" Set&lt;Video>" name="hashtaggedVideos"/>
+    </domains>
+    <domains classPackage="uk.ac.york.eng2.subscriptions.domain" className="User">
+      <variables type="String" name="username"/>
+      <variables type="Set&lt;Hashtag>" name="subscribedHashtags"/>
+    </domains>
+    <domains classPackage="uk.ac.york.eng2.subscriptions.domain" className="Video">
+      <variables type="String" name="title"/>
+      <variables type="Set&lt;Hashtag>" name="hashtags"/>
+      <variables type="long" name="views"/>
+    </domains>
+    <dtos classPackage="uk.ac.york.eng2.subscriptions.dto" className="HashtagDTO">
+      <variables type="String" name="name"/>
+    </dtos>
+    <dtos classPackage="uk.ac.york.eng2.subscriptions.dto" className="UserDTO">
+      <variables type="String" name="username"/>
+    </dtos>
+    <dtos classPackage="uk.ac.york.eng2.subscriptions.dto" className="VideoDTO">
+      <variables type="String" name="title"/>
+      <variables type="long" name="views"/>
+    </dtos>
+    <repositories classPackage="uk.ac.york.eng2.subscriptions.repositories" className="HashtagsRepository">
+      <functions name="findOne" outputType="Optional&lt;HashtagDTO>">
+        <parameters type="long" name="id"/>
+      </functions>
+      <functions name="existsByName" outputType="boolean">
+        <parameters type="String" name="name"/>
+      </functions>
+      <functions name="findByName" outputType="Optional&lt;Hashtag>">
+        <parameters type="String" name="name"/>
+      </functions>
+      <functions name="deleteByName" outputType="void">
+        <parameters type="String" name="name"/>
+      </functions>
+    </repositories>
+    <repositories classPackage="uk.ac.york.eng2.subscriptions.repositories" className="UsersRepository">
+      <functions name="findOne" outputType="Optional&lt;UserDTO>">
+        <parameters type="long" name="id"/>
+      </functions>
+      <functions name="existsByUsername" outputType="boolean">
+        <parameters type="String" name="username"/>
+      </functions>
+      <functions name="findByUsername" outputType="Optional&lt;User>">
+        <parameters type="String" name="username"/>
+      </functions>
+      <functions name="deleteByUsername" outputType="void">
+        <parameters type="String" name="username"/>
+      </functions>
+    </repositories>
+    <repositories classPackage="uk.ac.york.eng2.subscriptions.repositories" className="VideosRepository">
+      <functions name="findOne" outputType="Optional&lt;VideoDTO>">
+        <parameters type="long" name="id"/>
+      </functions>
+      <functions name="existsByTitle" outputType="boolean">
+        <parameters type="String" name="title"/>
+      </functions>
+      <functions name="findByTitle" outputType="Optional&lt;Video>">
+        <parameters type="String" name="title"/>
+      </functions>
+      <functions name="deleteByTitle" outputType="void">
+        <parameters type="String" name="title"/>
+      </functions>
+    </repositories>
+  </microservices>
+</TopNode>

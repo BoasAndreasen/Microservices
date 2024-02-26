@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated Microservices -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="Microservices.presentation.MicroservicesModelWizardID"
+            name="%_UI_MicroservicesModelWizard_label"
+            class="Microservices.presentation.MicroservicesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/MicroservicesModelFile.gif">
+         <description>%_UI_MicroservicesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated Microservices -->
+      <editor
+            id="Microservices.presentation.MicroservicesEditorID"
+            name="%_UI_MicroservicesEditor_label"
+            icon="icons/full/obj16/MicroservicesModelFile.gif"
+            extensions="microservices"
+            class="Microservices.presentation.MicroservicesEditor"
+            contributorClass="Microservices.presentation.MicroservicesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

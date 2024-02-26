@@ -1,0 +1,85 @@
+@namespace(uri="Microservices", prefix="")
+package Microservices;
+
+class TopNode {
+	val Event[*] events;
+	val EventStream[*] eventStreams;
+	val Microservice[*] microservices;
+}
+
+class Event {
+	attr String name;
+	attr String keyType;
+	attr String keyName;
+	attr String valType;
+	attr String valName;
+}
+
+class EventStream {
+	attr String topic;
+	attr String name;
+	ref Event EventType;
+}
+
+class Microservice {
+	attr String name;
+	val Subscriber[*] subscribers;
+	val Publisher[*] publishers;
+	val Controller[*] controllers;
+	val Domain[*] domains;
+	val Dto[*] dtos;
+	val Repository[*] repositories;
+}
+
+class JavaClass {
+	attr String classPackage;
+	attr String className;
+}
+
+class Controller extends JavaClass {
+	attr String path;
+	ref Repository[*] injections;
+	val Api[*] apis;
+}
+
+class Domain extends JavaClass {
+	val Variable[*] variables;
+}
+
+class Dto extends JavaClass {
+	val Variable[*] variables;
+}
+
+class Publisher extends JavaClass {
+	ref Repository[*] injections;
+	ref EventStream[*] eventStreams;
+}
+
+class Subscriber extends JavaClass {
+	attr String groupId;
+	ref Repository[*] injections;
+	ref EventStream[*] eventStreams;
+}
+
+class Repository extends JavaClass {
+	val Variable crudRepository;
+	val Function[*] functions;
+}
+
+class Variable {
+	attr String type;
+	attr String name;
+}
+
+class Function {
+	attr String name;
+	attr String outputType;
+	val Variable[*] parameters;
+	attr boolean body;
+}
+
+class Api extends Function {
+	attr String annotation;
+	attr String path;
+}
+

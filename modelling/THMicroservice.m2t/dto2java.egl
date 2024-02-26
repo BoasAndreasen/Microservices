@@ -1,0 +1,22 @@
+package [%=dt.classPackage.toLowerCase()%];
+
+import io.micronaut.serde.annotation.Serdeable;
+
+@Serdeable
+public class [%=dt.className.ftuc()%] {
+	
+	[%for (v in dt.variables) {%]
+	private [%=v.type%] [%=v.name%];
+	[%}%]
+	
+	[%for (v in dt.variables) {%]
+	public [%=v.type%] get[%=v.name.ftuc()%]() {
+		return [%=v.name%];
+	}
+	
+	public void set[%=v.name.ftuc()%]([%=v.type%] [%=v.name%]) {
+		this.[%=v.name%] = [%=v.name%];
+	}
+	
+	[%}%]
+}

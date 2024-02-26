@@ -1,0 +1,30 @@
+package [%=s.classPackage%];
+
+[%=out.startPreserve("//", "", "execute", true)%]
+[%=out.stopPreserve()%]
+
+@KafkaListener
+public class [%=s.className.ftuc()%] {
+
+	[%for (r in s.injections) {%]
+	@Inject
+	[%=r.className%] [%=r.className.ftlc()%];
+	
+	[%}%]
+	
+	
+	[%for (e in s.eventStreams) {%]
+	@Topic("[%=e.topic%]")
+	public void [%=e.name%](@KafkaKey [%=e.getParameters()%]) {
+		[%=out.startPreserve("//", "", "execute", true)%]
+		[%=out.stopPreserve()%]
+	}
+	[%}%]
+}
+
+[%
+operation EventStream getParameters() {
+	return self.EventType.keyType + " " + self.EventType.keyName + ", "
+			+ self.EventType.valType + " " +  self.EventType.valName;
+}
+%]

@@ -1,0 +1,21 @@
+package [%=p.classPackage%];
+
+[%=out.startPreserve("//", "", "execute", true)%]
+[%=out.stopPreserve()%]
+
+@KafkaClient
+public interface [%=p.className.ftuc()%] {
+	
+	[%for (e in p.eventStreams) {%]
+	@Topic("[%=e.topic%]")
+	void [%=e.name%](@KafkaKey [%=e.getParameters()%]);
+	
+	[%}%]
+}
+
+[%
+operation EventStream getParameters() {
+	return self.EventType.keyType + " " + self.EventType.keyName + ", "
+			+ self.EventType.valType + " " +  self.EventType.valName;
+}
+%]

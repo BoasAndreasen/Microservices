@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="project" version="12.0.0.2017041100">
+  <ownedViewpoints name="MyViewpoint">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="THMDiagram" label="THM Diagram" domainClass="Microservices::Microservice" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="controllerNode" label="Controller Node" domainClass="Microservices::Controller">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="domainNode" label="Domain Node" domainClass="Microservices::Domain">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="dtoNode" label="Dto Node" domainClass="Microservices::Dto">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="repositoryNode" label="Repository Node" domainClass="Microservices::Repository">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="publisherNode" label="Publisher Node" domainClass="Microservices::Publisher">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="subscriberNode" label="Subscriber Node" domainClass="Microservices::Subscriber">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="injectionEdge" label="Injection Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='controllerNode'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='subscriberNode'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='publisherNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']" targetFinderExpression="feature:injections">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="Injects">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections name="nodeCreationTools" label="Node Creation">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="controllerCreationTool" label="Create Controller" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='controllerNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Controller" referenceName="controllers"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="domainCreationTool" label="Create Domain" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='domainNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Domain" referenceName="domains"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="dtoCreationTool" label="Create Dto" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='dtoNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Dto" referenceName="dtos"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="repositoryCreationTool" label="Create Repository" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Repository" referenceName="repositories"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="publisherCreationTool" label="Create Publisher" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='publisherNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Publisher" referenceName="publishers"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="subscriberCreationTool" label="Create Subscriber" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='THMDiagram']/@defaultLayer/@nodeMappings[name='subscriberNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Subscriber" referenceName="subscribers"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsControllerDiagram" label="Controller Diagram" domainClass="Microservices::Controller" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="controllerNode" label="Controller Node" semanticCandidatesExpression="aql:self" domainClass="Microservices::Controller">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="apiNode" label="Api Node" semanticCandidatesExpression="feature:apis" domainClass="Microservices::Api">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="implementsEdge" label="Implements Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='controllerNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='apiNode']" targetFinderExpression="feature:apis">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="Implements">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections name="nodeCreationTools" label="Node Creation">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="apiCreationTool" label="Create Api" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='apiNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Api" referenceName="apis"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsRepositoryDiagram" label="Repository Diagram" domainClass="Microservices::Repository" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="functionNode" label="Function Node" semanticCandidatesExpression="feature:functions" domainClass="Microservices::Function">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="repositoryNode" label="Repository Node" semanticCandidatesExpression="aql:self" domainClass="Microservices::Repository">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="hasEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='functionNode']" targetFinderExpression="feature:functions">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="impl">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="functionCreationTool" label="Create Function" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='functionNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Function" referenceName="functions"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsDomainDiagram" label="Domain Diagram" domainClass="Microservices::Domain" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="variableNode" label="Variable Node" semanticCandidatesExpression="feature:variables" domainClass="Microservices::Variable">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="domainNode" label="Domain Node" semanticCandidatesExpression="aql:self" domainClass="Microservices::Domain">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="variablesEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='domainNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='variableNode']" targetFinderExpression="feature:variables">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="has">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="variableCreationTool" label="Create Variable" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='variableNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Variable" referenceName="variables"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsDtoDiagram" label="Dto Diagram" domainClass="Microservices::Dto" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="variableNode" label="Variable Node" semanticCandidatesExpression="feature:variables" domainClass="Microservices::Variable">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="dtoNode" label="Dto Node" semanticCandidatesExpression="aql:self" domainClass="Microservices::Dto">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="variablesEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='dtoNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='variableNode']" targetFinderExpression="feature:variables">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="has">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="variableCreationTool" label="Create Variable" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='variableNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Variable" referenceName="variables"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsPublisherDiagram" label="Publisher Diagram" domainClass="Microservices::Publisher" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="publisherNode" label="Publisher Node" domainClass="Microservices::Publisher">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="repositoryNode" label="Repository Node" semanticCandidatesExpression="feature:injections" domainClass="Microservices::Repository">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="eventStreamPublisherNode" label="Event Stream Publisher Node" semanticCandidatesExpression="feature:eventStreams" domainClass="Microservices::EventStream">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="impleEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='publisherNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='eventStreamPublisherNode']" targetFinderExpression="feature:eventStreams">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="Implements">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsSubscriberDiagram" label="Subscriber Diagram" domainClass="Microservices::Subscriber" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="repositoryNode" label="Repository Node" semanticCandidatesExpression="feature:injections" domainClass="Microservices::Repository">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="subscriberNode" label="Subscriber Node" domainClass="Microservices::Subscriber">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="eventStreamSubscriberNode" label="Event Stream Subscriber Node" semanticCandidatesExpression="feature:eventStreams" domainClass="Microservices::EventStream">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="injectsEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='subscriberNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']" targetFinderExpression="feature:injections">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="Injects">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="refEdge" label="Reference Edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='subscriberNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='eventStreamSubscriberNode']" targetFinderExpression="feature:eventStreams">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="References">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="eventStreamDiagram" label="Event Stream Diagram" domainClass="Microservices::EventStream" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="eventStreamNode" label="Event Stream Node" semanticCandidatesExpression="aql:self" domainClass="Microservices::EventStream">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="eventNode" label="Event Node" semanticCandidatesExpression="feature:EventType" domainClass="Microservices::Event">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="hasEventEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventStreamNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventNode']" targetFinderExpression="feature:EventType">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="eventDiagram" label="Event Diagram" domainClass="Microservices::Event" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="eventNode" label="Event Node" domainClass="THMicroservice::Event"/>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="functionDiagram" label="Function Diagram" domainClass="Microservices::Function" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="functionNode" label="Function Node" semanticCandidatesExpression="aql:self" domainClass="Microservices::Function">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="variableNode" label="Variable Node" semanticCandidatesExpression="feature:parameters" domainClass="Microservices::Variable">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="hasVarEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='functionNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='variableNode']" targetFinderExpression="feature:parameters">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="param">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="variableCreationTool" label="Create Variable" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='functionDiagram']/@defaultLayer/@nodeMappings[name='variableNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Microservices::Variable" referenceName="parameters"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="myTHM.project.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

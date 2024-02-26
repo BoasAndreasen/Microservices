@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Microservice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="THMicroservice">
+  <subscribers classPackage="uk.ac.york.eng2.trendingHashtags.events" className="TrendingHashtagConsumer" groupId="trendingHashtags-debug" injections="//@repositories.0">
+    <eventStreams topic="er" name="videoLiked">
+      <EventType keyType="String" keyName="id" valType="String" valName="video"/>
+    </eventStreams>
+    <eventStreams topic="ee" name="hashtagMetric">
+      <EventType keyType="WindowedIdentifier" keyName="window" valType="Long" valName="count"/>
+    </eventStreams>
+  </subscribers>
+  <publishers classPackage="uk.ac.york.eng2.trendingHashtags.events" className="TrendingHashtagsProducer">
+    <eventStreams topic="video-liked" name="videoLiked">
+      <EventType keyType="String" keyName="title" valType="String" valName="s"/>
+    </eventStreams>
+    <eventStreams topic="video-liked-by-day" name="videoLikedMetric">
+      <EventType keyType="WindowedIdentifier" keyName="window" valType="Long" valName="count"/>
+    </eventStreams>
+  </publishers>
+  <controllers classPackage="uk.ac.york.eng2.trendingHashtags.controllers" className="HashtagsController" path="/trendingHashtags" injections="//@repositories.0">
+    <apis name="list" outputType="Iterable&lt;Hashtag>" body="true" annotation="Get" path="/"/>
+    <apis name="getTopHashtags" outputType="List&lt;Hashtag>" body="true" annotation="Get" path="/topHashtags">
+      <parameters>String name</parameters>
+    </apis>
+  </controllers>
+  <domains classPackage="uk.ac.york.eng2.trendingHashtags.domain" className="Hashtag">
+    <variables type="String" name="name"/>
+    <variables type="long" name="likeCount"/>
+    <variables type="long" name="startMillis"/>
+    <variables type="long" name="endMillis"/>
+  </domains>
+  <dtos classPackage="uk.ac.york.eng2.trendingHashtags.dto" className="HashtagDTO">
+    <variables type="String" name="name"/>
+    <variables type="long" name="likeCount"/>
+  </dtos>
+  <repositories classPackage="uk.ac.york.eng2.trendingHashtags.repositories" className="HashtagsRepository">
+    <functions name="findOne" outputType="Optional&lt;HashtagDTO>">
+      <parameters>long id</parameters>
+    </functions>
+    <functions name="existsByName" outputType="boolean">
+      <parameters>String name</parameters>
+    </functions>
+    <functions name="findByName" outputType="Optional&lt;Hashtag>">
+      <parameters>String name</parameters>
+    </functions>
+    <functions name="findTop10ByEndMillisGreaterThanOrderByLikeCountDesc" outputType="List&lt;HashtagDTO>">
+      <parameters>long oneHourAgoMillis</parameters>
+    </functions>
+  </repositories>
+</Microservice>

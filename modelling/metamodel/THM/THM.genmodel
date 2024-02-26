@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/THM/src" modelPluginID="THM" modelName="THM" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>THM.ecore</foreignModel>
+  <genPackages prefix="THM" disposableProviderFactory="true" ecorePackage="THM.ecore#/">
+    <genClasses ecoreClass="THM.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Event/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Event/keyType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Event/keyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Event/valType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Event/valName"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//EventStream">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//EventStream/topic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//EventStream/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference THM.ecore#//EventStream/EventType"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//Microservice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Microservice/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Microservice/subscribers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Microservice/publishers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Microservice/controllers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Microservice/domains"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Microservice/dtos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Microservice/repositories"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//JavaClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//JavaClass/classPackage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//JavaClass/className"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//Controller">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Controller/path"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference THM.ecore#//Controller/injections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Controller/apis"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//Domain">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Domain/variables"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//Dto">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Dto/variables"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//Publisher">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference THM.ecore#//Publisher/injections"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference THM.ecore#//Publisher/eventStreams"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//Subscriber">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Subscriber/groupId"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference THM.ecore#//Subscriber/injections"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference THM.ecore#//Subscriber/eventStreams"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//Repository">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Repository/functions"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Variable/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Variable/name"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//Function">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Function/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Function/outputType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference THM.ecore#//Function/parameters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Function/body"/>
+    </genClasses>
+    <genClasses ecoreClass="THM.ecore#//Api">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Api/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute THM.ecore#//Api/path"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

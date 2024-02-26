@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="project" version="12.0.0.2017041100">
+  <ownedViewpoints name="THMViewpoint">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="THM Diagram" domainClass="THMicroservice::Microservice" enablePopupBars="true">
+      <metamodel href="THMicroservice#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="controllerNode" label="Controller Node" semanticCandidatesExpression="feature:controllers" domainClass="THMicroservice::Controller">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="domainNode" label="Domain Node" domainClass="THMicroservice::Domain">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="dtoNode" label="Dto Node" domainClass="THMicroservice::Dto">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="repositoryNode" label="Repository Node" domainClass="THMicroservice::Repository">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="publisherNode" label="Publisher Node" domainClass="THMicroservice::Publisher">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="subscriberNode" label="Subscriber Node" domainClass="THMicroservice::Subscriber">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="injectionEdge" label="Injection Edge" sourceMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='THM%20Diagram']/@defaultLayer/@nodeMappings[name='controllerNode'] //@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='THM%20Diagram']/@defaultLayer/@nodeMappings[name='subscriberNode'] //@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='THM%20Diagram']/@defaultLayer/@nodeMappings[name='publisherNode']" targetMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='THM%20Diagram']/@defaultLayer/@nodeMappings[name='repositoryNode']" targetFinderExpression="feature:injections">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="Injects">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections name="nodeCreationTools" label="Node Creation">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="controllerCreationTool" label="Create Controller" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='THM%20Diagram']/@defaultLayer/@nodeMappings[name='controllerNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Controller" referenceName="controllers"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="domainCreationTool" label="Create Domain" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='THM%20Diagram']/@defaultLayer/@nodeMappings[name='domainNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Domain" referenceName="domains"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="dtoCreationTool" label="Create Dto" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='THM%20Diagram']/@defaultLayer/@nodeMappings[name='dtoNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Dto" referenceName="dtos"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="repositoryCreationTool" label="Create Repository" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='THM%20Diagram']/@defaultLayer/@nodeMappings[name='repositoryNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Repository" referenceName="repositories"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="publisherCreationTool" label="Create Publisher" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='THM%20Diagram']/@defaultLayer/@nodeMappings[name='publisherNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Publisher" referenceName="publishers"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="subscriberCreationTool" label="Create Subscriber" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='THM%20Diagram']/@defaultLayer/@nodeMappings[name='subscriberNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Subscriber" referenceName="subscribers"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsControllerDiagram" label="Controller Diagram" domainClass="THMicroservice::Controller" enablePopupBars="true">
+      <metamodel href="THMicroservice#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="controllerNode" label="Controller Node" domainClass="THMicroservice::Controller">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="apiNode" label="Api Node" semanticCandidatesExpression="aql:self.apis" domainClass="THMicroservice::Api">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="implementsEdge" label="Implements Edge" sourceMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='controllerNode']" targetMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='apiNode']" targetFinderExpression="feature:apis">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="Implements">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="apiCreationTool" label="Create Api" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsControllerDiagram']/@defaultLayer/@nodeMappings[name='apiNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Api"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsRepositoryDiagram" label="Repository Diagram" domainClass="THMicroservice::Repository" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="functionNode" label="Function Node" semanticCandidatesExpression="feature:functions" domainClass="THMicroservice::Function">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="repositoryNode" label="Repository Node" domainClass="THMicroservice::Repository">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="hasEdge" sourceMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']" targetMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='functionNode']" targetFinderExpression="feature:functions">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="impl">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="functionCreationTool" label="Create Function" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsRepositoryDiagram']/@defaultLayer/@nodeMappings[name='functionNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Function" referenceName="functions"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsDomainDiagram" label="Domain Diagram" domainClass="THMicroservice::Domain" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="variableNode" label="Variable Node" semanticCandidatesExpression="feature:variables" domainClass="THMicroservice::Variable">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="domainNode" label="Domain Node" domainClass="THMicroservice::Domain">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="variablesEdge" sourceMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='domainNode']" targetMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='variableNode']" targetFinderExpression="feature:variables">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="has">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="variableCreationTool" label="Create Variable" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsDomainDiagram']/@defaultLayer/@nodeMappings[name='variableNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Variable" referenceName="variables"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsDtoDiagram" label="Dto Diagram" domainClass="THMicroservice::Dto" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="variableNode" label="Variable Node" semanticCandidatesExpression="feature:variables" domainClass="THMicroservice::Variable">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="dtoNode" label="Dto Node" domainClass="THMicroservice::Dto">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="variablesEdge" sourceMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='dtoNode']" targetMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='variableNode']" targetFinderExpression="feature:variables">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="has">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="variableCreationTool" label="Create Variable" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsDtoDiagram']/@defaultLayer/@nodeMappings[name='variableNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Variable" referenceName="variables"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsPublisherDiagram" label="Publisher Diagram" domainClass="THMicroservice::Publisher" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="publisherNode" label="Publisher Node" domainClass="THMicroservice::Publisher">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="repositoryNode" label="Repository Node" domainClass="THMicroservice::Repository">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="eventStreamPublisherNode" label="Event Stream Publisher Node" semanticCandidatesExpression="feature:eventStreams" domainClass="THMicroservice::EventStream">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="impleEdge" label="Implements Edge" sourceMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='publisherNode']" targetMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='eventStreamPublisherNode']" targetFinderExpression="feature:eventStreams">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="Implements">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="eventStreamCreationTool" label="Create Event Stream" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsPublisherDiagram']/@defaultLayer/@nodeMappings[name='eventStreamPublisherNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::EventStream" referenceName="eventStreams"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hashtagsSubscriberDiagram" label="Subscriber Diagram" domainClass="THMicroservice::Subscriber" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="repositoryNode" label="Repository Node" domainClass="THMicroservice::Repository">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="subscriberNode" label="Subscriber Node" domainClass="THMicroservice::Subscriber">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:className" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="eventStreamSubscriberNode" label="Event Stream Subscriber Node" semanticCandidatesExpression="feature:eventStreams" domainClass="THMicroservice::EventStream">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="injectsEdge" sourceMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='subscriberNode']" targetMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='repositoryNode']" targetFinderExpression="feature:injections">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="Injects">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="implEdge" label="Implements Edge" sourceMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='subscriberNode']" targetMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='eventStreamSubscriberNode']" targetFinderExpression="feature:eventStreams">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="Implements">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="eventStreamCreationTool" label="Create Event Stream" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='hashtagsSubscriberDiagram']/@defaultLayer/@nodeMappings[name='eventStreamSubscriberNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::EventStream" referenceName="eventStreams"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="eventStreamDiagram" label="Event Stream Diagram" domainClass="THMicroservice::EventStream" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="eventStreamNode" label="Event Stream Node" semanticCandidatesExpression="aql:self" domainClass="THMicroservice::EventStream">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="eventNode" label="Event Node" semanticCandidatesExpression="feature:EventType" domainClass="THMicroservice::Event">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:valName" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="hasEventEdge" sourceMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventStreamNode']" targetMapping="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventNode']" targetFinderExpression="feature:EventType">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="has">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="eventCreationTool" label="Create Event" nodeMappings="//@ownedViewpoints[name='THMViewpoint']/@ownedRepresentations[name='eventStreamDiagram']/@defaultLayer/@nodeMappings[name='eventNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="THMicroservice::Event" referenceName="EventType"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="eventDiagram" label="Event Diagram" domainClass="THMicroservice::Event" enablePopupBars="true">
+      <defaultLayer name="Default"/>
+      <nodeMappings name="eventNode" label="Event Node" domainClass="THMicroservice::Event">
+        <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="feature:valName" labelPosition="node" resizeKind="NSEW">
+          <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+        </style>
+      </nodeMappings>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="topNodeDiagram" label="Top Node Diagram" domainClass="Microservices::TopNode" enablePopupBars="true">
+      <metamodel href="Microservices#/"/>
+      <defaultLayer name="Default"/>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="THMicroservice.project.design.Services"/>
+  </ownedViewpoints>
+</description:Group>
